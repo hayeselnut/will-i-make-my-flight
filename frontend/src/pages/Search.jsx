@@ -6,9 +6,10 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { JourneyTimeline } from "../components";
-import { useSearchParams } from "react-router-dom";
+import { useOutletContext, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Background.css";
+import "./Globe.css";
 
 const dummyData = {
   percent_chance: 50,
@@ -34,6 +35,8 @@ const Search = () => {
   const [searchParams] = useSearchParams();
   const [loaded, setLoaded] = useState(false);
   const [likelihood, setLikelihood] = useState({});
+  const flyTo = useOutletContext();
+  console.log(flyTo)
 
   useEffect(() => {
     const timer = setTimeout(async () => {
@@ -74,6 +77,7 @@ const Search = () => {
       }
 
       setLoaded(true);
+      flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
     }, 1000);
 
     return () => {
