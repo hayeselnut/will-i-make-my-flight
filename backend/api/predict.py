@@ -58,7 +58,7 @@ def predict_flight_delay(airport, airline, flight_departure_time):
     confidence = np.sqrt(prediction[1])
 
     return {
-        "time": flight_departure_time + prediction[0],
+        "time": timedelta(hours=prediction[0], minutes=0) + flight_departure_time,
         "confidence": 80,
     }
 
