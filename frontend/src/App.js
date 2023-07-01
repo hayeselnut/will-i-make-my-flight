@@ -9,8 +9,10 @@ const App = () => {
     <ChakraProvider>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="search" element={<Search />} />
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="search" element={<Search />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
