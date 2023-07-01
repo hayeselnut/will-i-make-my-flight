@@ -87,18 +87,19 @@ const Search = () => {
 
   return loaded ? (
     <VStack>
+      <Text align="center" fontSize="3xl">You have a </Text>
       <Text
         color={colorStyle(likelihood.percent_chance)}
         fontWeight={"bold"}
-        fontSize="6xl"
+        fontSize="9xl"
       >
         {likelihood.percent_chance}%
       </Text>
-      <Text>is the chance you will make your flight</Text>
+      <Text align="center" fontSize="3xl">chance of making your flight</Text>
 
       <Divider marginTop="50px" marginBottom="50px" />
 
-      <Text marginBottom="30px">Predicted timeline:</Text>
+      <Text marginBottom="30px">Your anticipated timeline is:</Text>
       <JourneyTimeline likelihood={likelihood} />
     </VStack>
   ) : (
