@@ -1,10 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-import numpy as np
 from time import sleep
-from random import randint
-from selenium import webdriver
 import time
 
 def convert(str):
