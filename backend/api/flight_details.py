@@ -40,13 +40,24 @@ def fetch_flight_details(flight_num, arrival_time):
             dep_time = dep_time_object.strftime(DEFAULT_TS_FMT)
         else:
             raise Exception("Invalid request")
+    
+        with open("data/airport-location.csv", "r") as f:
+            locations = json.loads(f)
+            longitude = locations[airport]["longitude"]
+            latitiude = locations[airport]["latitude"]
+    
     except:
         airport = "LAX"
         dep_time = "2023-07-01T12:07:37Z"
         gate = "29"
+        longitude = 33.94254
+        latitude = 0118.40807
 
     return {
         "airport": airport,
         "gate": gate,
-        "scheduled_departure_time": dep_time
+        "scheduled_departure_time": dep_time,
+        "longitude": longitude,
+        "latitude": latitude
     }
+
