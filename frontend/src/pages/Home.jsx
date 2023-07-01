@@ -11,7 +11,7 @@ import {
   Checkbox,
 } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import "./Background.css";
 import "./Home.css";
 
@@ -22,7 +22,7 @@ const Home = () => {
   const [year, setYear] = React.useState("");
   const [minutes, setMinutes] = React.useState("");
   const [hours, setHours] = React.useState("");
-  const [luggage, setLuggage] = React.useState(true);
+  const [luggage] = React.useState(true);
 
   // check if any fields are empty
   const checkFields = () => {
