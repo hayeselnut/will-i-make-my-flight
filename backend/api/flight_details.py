@@ -1,7 +1,10 @@
+from datetime import datetime
 import re
 import os
 from dotenv import load_dotenv
 import requests
+
+from helpers import AIRLABS_TS_FMT, DEFAULT_TS_FMT
 
 load_dotenv()
     
@@ -31,6 +34,9 @@ def fetch_flight_details(flight_num, arrival_time):
             details = body["response"]
             airport = details["dep_iata"]
             dep_time = details["dep_time"]
+
+            dep_time_object = datetime.strptime(dep_time, AIRLABS_TS_FMT)
+            dep_time = dep_time_object.strftime(DEFAULT_TS_FMT)
         else:
             raise Exception("Invalid request")
     except:

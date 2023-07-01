@@ -1,4 +1,7 @@
+from helpers import DEFAULT_TS_FMT, month_from_timestamp
+
 def predict_bag_check(airport, airline, arrival_time):
+    month = month_from_timestamp(arrival_time, DEFAULT_TS_FMT)
 
     return {
         "time": 10,
@@ -6,6 +9,7 @@ def predict_bag_check(airport, airline, arrival_time):
     }
 
 def predict_security(airport, arrival_time):
+    month = month_from_timestamp(arrival_time, DEFAULT_TS_FMT)
 
     return {
         "time": 40,
@@ -13,6 +17,7 @@ def predict_security(airport, arrival_time):
     }
 
 def predict_flight_delay(airport, airline, flight_departure_time):
+    month = month_from_timestamp(flight_departure_time, DEFAULT_TS_FMT)
 
     return {
         "time": 60,
