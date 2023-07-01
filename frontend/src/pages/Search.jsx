@@ -1,9 +1,6 @@
 import {
-  Container,
   VStack,
   Text,
-  Card,
-  CardBody,
   Divider,
   Spinner,
   Center,
@@ -84,36 +81,26 @@ const Search = () => {
     };
   }, [searchParams]);
 
-  return (
-    <div id="lightblue">
-      <Container paddingTop="40vh">
-        <Card>
-          <CardBody>
-            {loaded ? (
-              <VStack>
-                <Text
-                  color={colorStyle(likelihood.percent_chance)}
-                  fontWeight={"bold"}
-                  fontSize="6xl"
-                >
-                  {likelihood.percent_chance}%
-                </Text>
-                <Text>is the chance you will make your flight</Text>
+  return loaded ? (
+    <VStack>
+      <Text
+        color={colorStyle(likelihood.percent_chance)}
+        fontWeight={"bold"}
+        fontSize="6xl"
+      >
+        {likelihood.percent_chance}%
+      </Text>
+      <Text>is the chance you will make your flight</Text>
 
-                <Divider marginTop="50px" marginBottom="50px" />
+      <Divider marginTop="50px" marginBottom="50px" />
 
-                <Text marginBottom="30px">Predicted timeline:</Text>
-                <JourneyTimeline likelihood={likelihood} />
-              </VStack>
-            ) : (
-              <Center>
-                <Spinner size="xl" />
-              </Center>
-            )}
-          </CardBody>
-        </Card>
-      </Container>
-    </div>
+      <Text marginBottom="30px">Predicted timeline:</Text>
+      <JourneyTimeline likelihood={likelihood} />
+    </VStack>
+  ) : (
+    <Center height="350px">
+      <Spinner size="xl" />
+    </Center>
   );
 };
 
