@@ -15,8 +15,8 @@ import FadeIn from "react-fade-in";
 const dummyData = {
   percent_chance: 50,
   departure_airport: "LAX", // AIRPORT CODE
-  departure_time_scheduled: "2023-07-01T08:30:37Z", // UTC
-  arrival_airport: "2023-07-01T09:07:37Z", // UTC
+  departure_time_scheduled: "2023-07-01T08:30:37", // UTC
+  arrival_airport: "2023-07-01T09:07:37", // UTC
   predicted_bag_check: 20, // FIXED amount of time for bag check in
   predicted_security: 30, // in minutes
   predicted_flight_delay: 60, // in minutes
@@ -41,9 +41,9 @@ const Search = () => {
   useEffect(() => {
     const timer = setTimeout(async () => {
       const request = {
-        flightNumber: searchParams.get("flightNumber"),
-        arrivalTime: searchParams.get("arrivalTime"),
-        luggage: searchParams.get("luggage"),
+        flight_number: searchParams.get("flightNumber"),
+        arrival_time: searchParams.get("arrivalTime"),
+        bag_check: searchParams.get("bagCheck"),
       };
       // Call endpoint
       const options = {
@@ -54,13 +54,11 @@ const Search = () => {
         },
       };
 
-      const response = await fetch(
-        // TODO: endpoint
-        "http://localhost:3000/listings/new",
-        options
-      );
-
       try {
+        const response = await fetch(
+          "http://localhost:3010/flightlikelihood",
+          options
+        );
         const json = await response.json();
 
         if (json.error) {

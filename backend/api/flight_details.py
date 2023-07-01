@@ -48,7 +48,7 @@ def fetch_flight_details(flight_num, arrival_time):
     
     except:
         airport = "LAX"
-        dep_time = "2023-07-01T12:07:37Z"
+        dep_time = "2023-07-01T12:07:37"
         gate = "29"
         longitude = 33.94254
         latitude = 0118.40807
