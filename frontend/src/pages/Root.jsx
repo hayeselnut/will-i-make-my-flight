@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React   from "react";
 import {
   Card,
   Container,
@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import { Link, Outlet} from "react-router-dom";
 import mapboxgl from 'mapbox-gl';
-import FadeIn from "react-fade-in";
+// import FadeIn from "react-fade-in";
 import "./Background.css";
 
 const Root = () => {
@@ -74,19 +74,22 @@ const Root = () => {
       essential: true,
       zoom: 10
     });
-    userInteracting = true;
   }
 
   return (
     <>
       <Container className="scrollable" style={{height: "100vh", overflow: "scroll"}}>
+      {/* <Button onClick={() => {
+      console.log("FLYING OVER!");
+      flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
+      }}>HICLICKME</Button> */}
         <Center>
           <Link to="/">
-            <FadeIn transitionDuration={5000}>
-            <Heading position="relative" color="white" size={"4xl"} marginTop="8vh" textAlign="center">
-              Will I Make My Flight?
-            </Heading>
-            </FadeIn>
+            {/* <FadeIn transitionDuration={3000}> */}
+              <Heading position="relative" color="white" size={"4xl"} marginTop="8vh" textAlign="center">
+                Will I Make My Flight?
+              </Heading>
+            {/* </FadeIn> */}
           </Link>
         </Center>
         <Card padding={10} marginTop={"10vh"} minHeight={"430px"}

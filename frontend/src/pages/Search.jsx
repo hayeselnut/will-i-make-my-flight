@@ -10,7 +10,7 @@ import { useOutletContext, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Background.css";
 import "./Globe.css";
-import FadeIn from "react-fade-in";
+// import FadeIn from "react-fade-in";
 
 const dummyData = {
   percent_chance: 50,
@@ -54,13 +54,11 @@ const Search = () => {
         },
       };
 
-      const response = await fetch(
-        // TODO: endpoint
-        "http://localhost:3010/flightlikelihood",
-        options
-      );
-
       try {
+        const response = await fetch(
+          "http://localhost:3010/flightlikelihood",
+          options
+        );
         const json = await response.json();
 
         if (json.error) {
@@ -77,20 +75,21 @@ const Search = () => {
       }
 
       setLoaded(true);
+      console.log("FLYING OVER!");
       flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
     }, 1000);
 
     return () => {
       clearTimeout(timer);
     };
-  }, [searchParams]);
+  }, [searchParams, flyTo]);
 
   return loaded ? (
     <VStack>
-      <FadeIn transitionDuration={4000}>
+      {/* <FadeIn transitionDuration={4000}> */}
         <Text align="center" fontSize="3xl">You have a </Text>
-      </FadeIn>
-      <FadeIn transitionDuration={4000}>
+      {/* </FadeIn>
+      <FadeIn transitionDuration={4000}> */}
         <Text
           color={colorStyle(likelihood.percent_chance)}
           fontWeight={"bold"}
@@ -98,14 +97,14 @@ const Search = () => {
         >
           {likelihood.percent_chance}%
         </Text>
-        </FadeIn>
-      <FadeIn transitionDuration={4000}>
+        {/* </FadeIn> */}
+      {/* <FadeIn transitionDuration={4000}> */}
         <Text align="center" fontSize="3xl">chance of making your flight</Text>
-      </FadeIn>
+       {/* </FadeIn> */}
       <Divider marginTop="50px" marginBottom="50px" />
-        <FadeIn transitionDuration={6000}>
+         {/* <FadeIn transitionDuration={6000}> */}
           <Text marginBottom="30px">Your anticipated timeline is:</Text>
-        </FadeIn>
+         {/* </FadeIn> */}
       <JourneyTimeline likelihood={likelihood} />
     </VStack>
   ) : (
