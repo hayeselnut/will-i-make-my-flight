@@ -98,7 +98,7 @@ const Search = () => {
               >
                 {likelihood.percent_chance}%
               </Text>
-              <Text>is the chance you will make your flight.</Text>
+              <Text>is the chance you will make your flight</Text>
 
               <Divider marginTop="50px" marginBottom="50px" />
 
