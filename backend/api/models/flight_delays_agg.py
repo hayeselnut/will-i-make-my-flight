@@ -45,7 +45,7 @@ def predict_delay(airport, airline, flight_departure_time):
     '{:.2f}%'.format(icount / len(result) * 100)
 
     index = agg.loc((agg['ORIGIN'] == airport) & (agg['CRS_DEP_HOUR'] == flight_departure_time.dt.hour)).index
-    return result[index]
+    return result[index], metrics.mean_squared_error(result, Y)
 
 if __name__ == "__main__":
     print(predict_delay('AA', 'JFK', dt.time(5, 10)))
