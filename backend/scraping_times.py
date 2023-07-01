@@ -21,7 +21,6 @@ def scrape_airport():
     time_content = [t.get_text() for t in time]
     minute_content = [m.get_text() for m in minute]
 
-
     open_time = time_content[0].split('\n\t\t\t\t')[1].split(' ')[0]
     close_time = time_content[-1].split('\n\t\t\t\t')[1].split(' ')[0]
 
