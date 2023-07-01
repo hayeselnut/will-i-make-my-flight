@@ -1,4 +1,4 @@
-import React  from "react";
+import React, { useState }  from "react";
 import {
   Card,
   Container,
@@ -7,6 +7,7 @@ import {
 } from "@chakra-ui/react";
 import { Link, Outlet} from "react-router-dom";
 import mapboxgl from 'mapbox-gl';
+import FadeIn from "react-fade-in";
 import "./Background.css";
 
 const Root = () => {
@@ -78,16 +79,21 @@ const Root = () => {
 
   return (
     <>
-      {/* <Globe /> */}
-      <Container>
+      <Container className="scrollable" style={{height: "100vh", overflow: "scroll"}}>
         <Center>
           <Link to="/">
-            <Heading position="relative" color="white" size={"4xl"} marginTop="10vh">
-              Will I Make My Flight?
-            </Heading>
+            <FadeIn>
+              <Heading position="relative" color="white" size={"4xl"} marginTop="8vh">
+                Will I Make My Flight?
+              </Heading>
+            </FadeIn>
           </Link>
         </Center>
-        <Card padding={10} marginTop={"15vh"} minHeight={"450px"}>
+        <Card padding={10} marginTop={"10vh"} minHeight={"430px"}
+        style={{
+          "background-color": "rgba(255, 255, 255, 0.9)",
+          "backdrop-filter": "blur(5px)",
+        }}>
           <Outlet context={flyTo}/>
         </Card>
       </Container>
