@@ -38,7 +38,6 @@ def get_flight_likelihood():
     
     airline = airline_from_flight_num(flight_num)
 
-    bag_check = predict_bag_check(departure_airport, airline, arrival_time)
     security = predict_security(departure_airport, arrival_time)
     flight_delay = predict_flight_delay(departure_airport, airline, scheduled_departure_time)
 
@@ -53,6 +52,7 @@ def get_flight_likelihood():
     }
 
     if bag_check:
+        bag_check = predict_bag_check(departure_airport, airline, arrival_time)
         return_data["predicted_bag_check"] = bag_check["time"]
 
     return return_data
