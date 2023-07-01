@@ -82,10 +82,10 @@ const Root = () => {
       <Container className="scrollable" style={{height: "100vh", overflow: "scroll"}}>
         <Center>
           <Link to="/">
-            <FadeIn>
-              <Heading position="relative" color="white" size={"4xl"} marginTop="8vh">
-                Will I Make My Flight?
-              </Heading>
+            <FadeIn transitionDuration={5000}>
+            <Heading position="relative" color="white" size={"4xl"} marginTop="8vh" textAlign="center">
+              Will I Make My Flight?
+            </Heading>
             </FadeIn>
           </Link>
         </Center>
