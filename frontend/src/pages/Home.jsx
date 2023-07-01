@@ -1,43 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import moment from "moment";
 import {
-  Card,
-  Container,
   Center,
-  Heading,
   Input,
   FormControl,
   FormLabel,
   HStack,
+  Select,
   Checkbox,
+  Text,
+  Button,
 } from "@chakra-ui/react";
-import { Text } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
+import { createSearchParams, useNavigate } from "react-router-dom";
 import "./Background.css";
-import "./Home.css";
 
 const Home = () => {
-  const [flightNumber, setFlightNumber] = React.useState("");
-  const [day, setDay] = React.useState("");
-  const [month, setMonth] = React.useState("");
-  const [year, setYear] = React.useState("");
-  const [minutes, setMinutes] = React.useState("");
-  const [hours, setHours] = React.useState("");
-  const [luggage] = React.useState(true);
+  const today = moment();
+  const tomorrow = moment().add(1, "day");
 
-  // check if any fields are empty
+  const [flightNumber, setFlightNumber] = useState("");
+  const [day, setDay] = useState("");
+  const [minutes, setMinutes] = useState("");
+  const [hours, setHours] = useState("");
+  const [luggage, setLuggage] = useState(true);
+  const navigate = useNavigate();
+
   const checkFields = () => {
-    if (
-      flightNumber === "" ||
-      day === "" ||
-      month === "" ||
-      year === "" ||
-      minutes === "" ||
-      hours === ""
-    ) {
+    if (flightNumber === "" || day === "" || minutes === "" || hours === "") {
       alert("Please fill in missing fields");
-      return false;
-    } else if (day.length !== 2 || month.length !== 2 || year.length !== 4) {
-      alert("Please enter a valid date");
       return false;
     } else if (minutes.length !== 2 || hours.length !== 2) {
       alert("Please enter a valid time");
@@ -46,110 +36,88 @@ const Home = () => {
     return true;
   };
 
-  const searchFlight = async () => {
+  const searchFlight = async (e) => {
+    e.preventDefault();
+
     if (!checkFields()) {
       return;
     }
 
+    const momentDay = moment(day);
+
     const data = {
-      flightNumber: flightNumber,
-      arrivalTime: new Date(Date.UTC(year, month - 1, day, hours, minutes)),
-      luggage: luggage,
+      flightNumber,
+      arrivalTime: new Date(
+        momentDay.year(),
+        momentDay.month(),
+        momentDay.date(),
+        hours,
+        minutes
+      ),
+      luggage,
     };
 
-    const options = {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-
-    const response = await fetch("http://localhost:3000/listings/new", options);
-    const json = await response.json();
-    if (json.error) {
-      alert(json.error);
-    } else {
-      alert("We're gonna make this flight!!!");
-    }
+    navigate(`/search?${createSearchParams(data).toString()}`);
   };
 
   return (
-    <>
-    <div id="lightblue">
-      {/* <div id="cloud-intro"> */}
-      <Container>
-        <Center>
-          <Heading size={"4xl"} marginTop="15vh">Will I Make My Flight?</Heading>
-        </Center>
-        <Card padding={10} marginTop={"15vh"}>
-          <FormControl>
-            <FormLabel>Enter your flight number below</FormLabel>
-            <Input
-              type="text"
-              value={flightNumber}
-              onChange={(event) => setFlightNumber(event.target.value)}
-              placeholder="Flight number"
-            />
+    <FormControl>
+      <FormLabel>Enter your flight number below</FormLabel>
+      <Input
+        type="text"
+        value={flightNumber}
+        onChange={(event) => setFlightNumber(event.target.value)}
+        placeholder="Flight number"
+      />
 
-            <FormLabel marginTop={10}>When are you arriving at the airport?</FormLabel>
-<HStack justifyContent={"center"}>
-              <Input
-                type="text"
-                placeholder="dd"
-                onChange={(event) => setDay(event.target.value)}
-                style={{width: "80px"}}
-              />
-              <Text>/</Text>
-              <Input
-                type="text"
-                placeholder="mm"
-                onChange={(event) => setMonth(event.target.value)}
-                style={{width: "80px"}}
-              />
-              <Text>/</Text>
-              <Input
-                type="text"
-                placeholder="yyyy"
-                onChange={(event) => setYear(event.target.value)}
-                style={{width: "80px"}}
-              />
-            </HStack>
+      <FormLabel marginTop={10}>
+        When are you arriving at the airport?
+      </FormLabel>
+      <HStack justifyContent={"center"}>
+        <Select
+          onChange={(event) => setDay(event.target.value)}
+          placeholder="Select day"
+        >
+          <option value={today.format("LL")}>{today.format("LL")}</option>
+          <option value={tomorrow.format("LL")}>
+            {tomorrow.format("LL")}
+          </option>
+        </Select>
+        <Input
+          type="number"
+          placeholder="hh"
+          onChange={(event) => setHours(event.target.value)}
+          style={{ width: "80px" }}
+        />
+        <Text>:</Text>
+        <Input
+          type="number"
+          placeholder="mm"
+          onChange={(event) => setMinutes(event.target.value)}
+          style={{ width: "80px" }}
+        />
+      </HStack>
+      <HStack marginTop={10}>
+        <Checkbox
+          onChange={(event) => setLuggage(event.target.checked)}
+          value={luggage}
+          defaultChecked
+        >
+          I am checking in luggage.
+        </Checkbox>
+      </HStack>
 
-<HStack justifyContent={"center"}>
-<Input
-                type="text"
-                placeholder="hh"
-                onChange={(event) => setHours(event.target.value)}
-                style={{width: "80px"}}
-
-              />
-              <Text>:</Text>
-              <Input
-                type="text"
-                placeholder="mm"
-                onChange={(event) => setMinutes(event.target.value)}
-                style={{width: "80px"}}
-              />
-</HStack>
-            <HStack marginTop={10}>
-            <Checkbox defaultChecked value={luggage} >
-              I am checking in luggage.
-            </Checkbox>
-            </HStack>
-
-          <Center>
-
-            <Button marginTop={10} colorScheme="blue" onClick={searchFlight} type="submit">
-              Search
-            </Button>
-          </Center>
-          </FormControl>
-        </Card>
-      </Container>
-      </div>
-    {/* </div> */}
-    </>
+      <Center>
+        <Button
+          marginTop={10}
+          colorScheme="blue"
+          onClick={searchFlight}
+          type="submit"
+        >
+          Search
+        </Button>
+      </Center>
+    </FormControl>
   );
 };
 

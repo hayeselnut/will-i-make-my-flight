@@ -1,0 +1,503 @@
+iata_code,name,size
+ATL,Hartsfield - Jackson Atlanta International,Large
+DFW,Dallas-Fort Worth International,Large
+DEN,Denver International,Large
+ORD,Chicago O'Hare International,Large
+LAX,Los Angeles International,Large
+JFK,John F Kennedy International,Large
+LAS,Harry Reid International,Large
+MCO,Orlando International,Large
+MIA,Miami International,Large
+CLT,Charlotte/Douglas International,Large
+SEA,Seattle-Tacoma International,Large
+PHX,Phoenix Sky Harbor International,Large
+EWR,Newark Liberty International,Large
+SFO,San Francisco International,Large
+IAH,George Bush Intcntl/Houston,Large
+BOS,General Edward Lawrence Logan International,Large
+FLL,Fort Lauderdale/Hollywood International,Large
+MSP,Minneapolis-St Paul International/Wold-Chamberlain,Large
+LGA,Laguardia,Large
+DTW,Detroit Metro Wayne County,Large
+PHL,Philadelphia International,Large
+SLC,Salt Lake City International,Large
+DCA,Ronald Reagan Washington Ntl,Large
+SAN,San Diego International,Large
+BWI,Baltimore/Washington International Thurgood Marshall,Large
+TPA,Tampa International,Large
+AUS,Austin-Bergstrom International,Large
+IAD,Washington Dulles International,Large
+BNA,Nashville International,Large
+MDW,Chicago Midway International,Large
+HNL,Daniel K Inouye International,Large
+DAL,Dallas Love Field,Medium
+PDX,Portland International,Medium
+STL,St Louis Lambert International,Medium
+HOU,William P Hobby,Medium
+SMF,Sacramento International,Medium
+MSY,Louis Armstrong New Orleans International,Medium
+RDU,Raleigh-Durham International,Medium
+SJC,Norman Y Mineta San Jose International,Medium
+SNA,John Wayne/Orange County,Medium
+OAK,Metro Oakland International,Medium
+RSW,Southwest Florida International,Medium
+SJU,Luis Munoz Marin International,Medium
+MCI,Kansas City International,Medium
+SAT,San Antonio International,Medium
+CLE,Cleveland-Hopkins International,Medium
+IND,Indianapolis International,Medium
+OGG,Kahului,Medium
+PIT,Pittsburgh International,Medium
+CVG,Cincinnati/Northern Kentucky International,Medium
+CMH,John Glenn Columbus International,Medium
+PBI,Palm Beach International,Medium
+JAX,Jacksonville International,Medium
+BUR,Bob Hope,Medium
+BDL,Bradley International,Medium
+ONT,Ontario International,Medium
+MKE,General Mitchell International,Medium
+CHS,Charleston AFB/International,Medium
+ANC,Ted Stevens Anchorage International,Medium
+ABQ,Albuquerque International Sunport,Medium
+BOI,Boise Air Trml/Gowen Field,Medium
+OMA,Eppley Airfield,Medium
+MEM,Memphis International,Medium
+RNO,Reno/Tahoe International,Medium
+ORF,Norfolk International,Small
+RIC,Richmond International,Small
+BUF,Buffalo Niagara International,Small
+KOA,Ellison Onizuka Kona International at Keahole,Small
+ELP,El Paso International,Small
+OKC,Will Rogers World,Small
+SRQ,Sarasota/Bradenton International,Small
+GEG,Spokane International,Small
+SDF,Louisville Muhammad Ali International,Small
+LIH,Lihue,Small
+SAV,Savannah/Hilton Head International,Small
+GRR,Gerald R Ford International,Small
+MYR,Myrtle Beach International,Small
+TUS,Tucson International,Small
+LGB,Long Beach (Daugherty Field),Small
+PVD,Rhode Island Tf Green International,Small
+PSP,Palm Springs International,Small
+TUL,Tulsa International,Small
+DSM,Des Moines International,Small
+SFB,Orlando Sanford International,Small
+BHM,Birmingham-Shuttlesworth International,Small
+ALB,Albany International,Small
+SYR,Syracuse Hancock International,Small
+PIE,St Pete-Clearwater International,Small
+TYS,McGhee Tyson,Small
+PNS,Pensacola International,Small
+ROC,Frederick Douglass/Greater Rochester International,Small
+BZN,Bozeman Yellowstone International,Small
+COS,City of Colorado Springs Municipal,Small
+FAT,Fresno Yosemite International,Small
+GSP,Greenville Spartanburg International,Small
+VPS,Eglin AFB/Destin-Ft Walton Beach,Small
+LIT,Bill and Hillary Clinton Ntl/Adams Field,Small
+PWM,Portland International Jetport,Small
+IWA,Phoenix-Mesa Gateway,Small
+PGD,Punta Gorda,Small
+AVL,Asheville Regional,Small
+HPN,Westchester County,Small
+MSN,Dane County Regional/Truax Field,Small
+XNA,Northwest Arkansas Ntl,Small
+GSO,Piedmont Triad International,Small
+EUG,Mahlon Sweet Field,Small
+ICT,Wichita Dwight D Eisenhower Ntl,Small
+ECP,Northwest Florida Beaches International,Small
+STT,Cyril E King,Small
+EYW,Key West International,Small
+MHT,Manchester Boston Regional,Small
+ITO,Hilo International,Small
+MAF,Midland International Air And Space Port,Small
+MDT,Harrisburg International,Small
+ISP,Long Island MacArthur,Small
+CID,The Eastern Iowa,Small
+SBA,Santa Barbara Municipal,Small
+FSD,Joe Foss Field,Small
+BTV,Burlington International,Small
+JAN,Jackson-Medgar Wiley Evers International,Small
+HSV,Huntsville International-Carl T Jones Field,Small
+LEX,Blue Grass,Small
+DAY,James M Cox Dayton International,Small
+SGF,Springfield-Branson Ntl,Small
+ILM,Wilmington International,Small
+RDM,Roberts Field,Small
+FAI,Fairbanks International,Small
+HRL,Valley International,Small
+CAE,Columbia Metro,Small
+MFR,Rogue Valley International - Medford,Small
+LBB,Lubbock Preston Smith International,Small
+FAR,Hector International,Small
+ACY,Atlantic City International,Small
+MFE,McAllen International,Small
+CHA,Lovell Field,Small
+GUM,Guam International,Small
+MSO,Missoula Montana,Small
+GPI,Glacier Park International,Nonhub
+ABE,Lehigh Valley International,Nonhub
+ATW,Appleton International,Nonhub
+JAC,Jackson Hole,Nonhub
+TLH,Tallahassee International,Nonhub
+PSC,Tri-Cities,Nonhub
+BIL,Billings Logan International,Nonhub
+JNU,Juneau International,Nonhub
+SBN,South Bend International,Nonhub
+FWA,Fort Wayne International,Nonhub
+AMA,Rick Husband Amarillo International,Nonhub
+HVN,Tweed/New Haven,Nonhub
+BQN,Rafael Hernandez,Nonhub
+BGR,Bangor International,Nonhub
+GPT,Gulfport-Biloxi International,Nonhub
+MLB,Melbourne Orlando International,Nonhub
+BTR,"Baton Rouge Metro, Ryan Field",Nonhub
+RAP,Rapid City Regional,Nonhub
+TTN,Trenton Mercer,Nonhub
+BLI,Bellingham International,Nonhub
+CRP,Corpus Christi International,Nonhub
+IDA,Idaho Falls Regional,Nonhub
+STS,Charles M Schulz - Sonoma County,Nonhub
+GRB,Green Bay/Austin Straubel International,Nonhub
+ROA,Roanoke/Blacksburg Regional (Woodrum Field),Nonhub
+ASE,Aspen-Pitkin County/Sardy Field,Nonhub
+FNT,Bishop International,Nonhub
+TVC,Cherry Capital,Nonhub
+PIA,General Downing - Peoria International,Nonhub
+DAB,Daytona Beach International,Nonhub
+SBP,San Luis County Regional,Nonhub
+SHV,Shreveport Regional,Nonhub
+AGS,Augusta Regional at Bush Field,Nonhub
+MLI,Quad Cities International,Nonhub
+GNV,Gainesville Regional,Nonhub
+CAK,Akron-Canton Regional,Nonhub
+CHO,Charlottesville-Albemarle,Nonhub
+MOB,Mobile Regional,Nonhub
+PAE,Snohomish County (Paine Field),Nonhub
+BIS,Bismarck Municipal,Nonhub
+MTJ,Montrose Regional,Nonhub
+MRY,Monterey Regional,Nonhub
+LFT,Lafayette Regional/Paul Fournet Field,Nonhub
+GJT,Grand Junction Regional,Nonhub
+EGE,Eagle County Regional,Nonhub
+PVU,Provo Municipal,Nonhub
+STX,Henry E Rohlsen,Nonhub
+HDN,Yampa Valley,Nonhub
+TRI,Tri-Cities,Nonhub
+AVP,Wilkes-Barre/Scranton International,Nonhub
+DRO,Durango-La Plata County,Nonhub
+BMI,Central Il Regional/Bloomington- Normal,Nonhub
+FAY,Fayetteville Regional/Grannis Field,Nonhub
+CRW,West Virginia International Yeager,Nonhub
+BLV,Scott AFB/Midamerica St Louis,Nonhub
+SWF,New York Stewart International,Nonhub
+EVV,Evansville Regional,Nonhub
+MGM,Montgomery Regional (Dannelly Field),Nonhub
+LCK,Rickenbacker International,Nonhub
+AEX,Alexandria International,Nonhub
+KTN,Ketchikan International,Nonhub
+BET,Bethel,Nonhub
+GTF,Great Falls International,Nonhub
+BFL,Meadows Field,Nonhub
+ACK,Nantucket Memorial,Nonhub
+LRD,Laredo International,Nonhub
+MOT,Minot International,Nonhub
+OAJ,Albert J Ellis,Nonhub
+SGU,St George Regional,Nonhub
+BRO,Brownsville/South Padre Island International,Nonhub
+GRK,Robert Gray AAF,Nonhub
+LBE,Arnold Palmer Regional,Nonhub
+JQF,Concord-Padgett Regional,Nonhub
+SAF,Santa Fe Regional,Nonhub
+NYL,Yuma MCAS/Yuma International,Nonhub
+RFD,Chicago/Rockford International,Nonhub
+ACV,California Redwood Coast- Humboldt County,Nonhub
+DLH,Duluth International,Nonhub
+HXD,Hilton Head,Nonhub
+UNV,University Park,Nonhub
+PSE,Mercedita,Nonhub
+GSN,Francisco C Ada/Saipan International,Nonhub
+SUN,Friedman Memorial,Nonhub
+RDD,Redding Regional,Nonhub
+MKK,Molokai,Nonhub
+SIT,Sitka Rocky Gutierrez,Nonhub
+LNK,Lincoln,Nonhub
+FLG,Flagstaff Pulliam,Nonhub
+HTS,Tri-State/Milton J Ferguson Field,Nonhub
+GFK,Grand Forks International,Nonhub
+MLU,Monroe Regional,Nonhub
+TOL,Eugene F Kranz Toledo Express,Nonhub
+RST,Rochester International,Nonhub
+CSG,Columbus,Nonhub
+LAN,Capital Region International,Nonhub
+ADQ,Kodiak,Nonhub
+HLN,Helena Regional,Nonhub
+ELM,Elmira/Corning Regional,Nonhub
+COU,Columbia Regional,Nonhub
+PHF,Newport News/Williamsburg International,Nonhub
+ORH,Worcester Regional,Nonhub
+MHK,Manhattan Regional,Nonhub
+CWA,Central Wisconsin,Nonhub
+LYH,Lynchburg Regional/Preston Glenn Field,Nonhub
+ENA,Kenai Municipal,Nonhub
+PUW,Pullman/Moscow Regional,Nonhub
+PBG,Plattsburgh International,Nonhub
+SCK,Stockton Metro,Nonhub
+SCC,Deadhorse,Nonhub
+CPR,Casper/Natrona County International,Nonhub
+AZO,Kalamazoo/Battle Creek International,Nonhub
+SPI,Abraham Lincoln Capital,Nonhub
+ABI,Abilene Regional,Nonhub
+MBS,MBS International,Nonhub
+MVY,Martha's Vineyard,Nonhub
+XWA,Williston Basin International,Nonhub
+GRI,Central Nebraska Regional,Nonhub
+LSE,La Crosse Regional,Nonhub
+CMI,University of Illinois/Willard,Nonhub
+PSM,Portsmouth International at Pease,Nonhub
+EWN,Coastal Carolina Regional,Nonhub
+BVU,Boulder City Municipal,Nonhub
+OME,Nome,Nonhub
+ERI,Erie International/Tom Ridge Field,Nonhub
+LCH,Lake Charles Regional,Nonhub
+FSM,Fort Smith Regional,Nonhub
+IAG,Niagara Falls International,Nonhub
+OTZ,Ralph Wien Memorial,Nonhub
+ITH,Ithaca Tompkins International,Nonhub
+ROW,Roswell Air Center,Nonhub
+IFP,Laughlin/Bullhead International,Nonhub
+ACT,Waco Regional,Nonhub
+CLL,Easterwood Field,Nonhub
+SJT,San Angelo Regional/Mathis Field,Nonhub
+GUC,Gunnison-Crested Butte Regional,Nonhub
+SBY,Salisbury-Ocean City Wicomico Regional,Nonhub
+CKB,North Central West Virginia,Nonhub
+GTR,Golden Triangle Regional,Nonhub
+SAW,Marquette/Sawyer Regional,Nonhub
+LAW,Lawton-Fort Sill Regional,Nonhub
+LWS,Lewiston/Nez Perce County,Nonhub
+TYR,Tyler Pounds Regional,Nonhub
+VQS,Antonio Rivera Rodriguez,Nonhub
+DHN,Dothan Regional,Nonhub
+VLD,Valdosta Regional,Nonhub
+LNY,Lanai,Nonhub
+COD,Yellowstone Regional,Nonhub
+AKN,King Salmon,Nonhub
+BRW,Wiley Post-Will Rogers Memorial,Nonhub
+YKM,Yakima Air Trml/McAllister Field,Nonhub
+TXK,Texarkana Regional-Webb Field,Nonhub
+HOM,Homer,Nonhub
+ABY,Southwest Georgia Regional,Nonhub
+EAT,Pangborn Memorial,Nonhub
+BQK,Brunswick Golden Isles,Nonhub
+ALW,Walla Walla Regional,Nonhub
+DLG,Dillingham,Nonhub
+1G4,Grand Canyon West,Nonhub
+PGV,Pitt-Greenville,Nonhub
+HGR,Hagerstown Regional/Richard A Henson Field,Nonhub
+GCK,Garden City Regional,Nonhub
+FLO,Florence Regional,Nonhub
+RVR,Jose Aponte De La Torre,Nonhub
+SWO,Stillwater Regional,Nonhub
+SPS,Sheppard AFB/Wichita Falls Municipal,Nonhub
+TNI,Tinian International,Nonhub
+DRT,Del Rio International,Nonhub
+BJI,Bemidji Regional,Nonhub
+GGG,East Texas Regional,Nonhub
+SUX,Sioux Gateway/Brig General Bud Day Field,Nonhub
+PLN,Pellston Regional/Emmet County,Nonhub
+SHR,Sheridan County,Nonhub
+BPT,Jack Brooks Regional,Nonhub
+GCC,Northeast Wyoming Regional,Nonhub
+PRC,Prescott Regional - Ernest A Love Field,Nonhub
+PSG,Petersburg James A Johnson,Nonhub
+CMX,Houghton County Memorial,Nonhub
+EAR,Kearney Regional,Nonhub
+CIU,Chippewa County International,Nonhub
+CPX,Benjamin Rivera Noriega,Nonhub
+ABR,Aberdeen Regional,Nonhub
+BFI,Boeing Field/King County International,Nonhub
+PPG,Pago Pago International,Nonhub
+DIK,Dickinson/Theodore Roosevelt Regional,Nonhub
+DUT,Unalaska,Nonhub
+RHI,Rhinelander/Oneida County,Nonhub
+JLN,Joplin Regional,Nonhub
+IMT,Ford,Nonhub
+PGA,Page Municipal,Nonhub
+ART,Watertown International,Nonhub
+ESC,Delta County,Nonhub
+BRD,Brainerd Lakes Regional,Nonhub
+SLN,Salina Regional,Nonhub
+CYS,Cheyenne Regional/Jerry Olson Field,Nonhub
+CNY,Canyonlands Regional,Nonhub
+STC,St. Cloud Regional,Nonhub
+BTM,Bert Mooney,Nonhub
+LAR,Laramie Regional,Nonhub
+HOB,Lea County Regional,Nonhub
+EAU,Chippewa Valley Regional,Nonhub
+OTH,Southwest Oregon Regional,Nonhub
+CDV,Merle K (Mudhole) Smith,Nonhub
+SIG,Fernando Luis Ribas Dominicci,Nonhub
+TWF,Joslin Field/Magic Valley Regional,Nonhub
+PIR,Pierre Regional,Nonhub
+ALO,Waterloo Regional,Nonhub
+AKW,Klawock,Nonhub
+SMX,Santa Maria Public/Capt G Allan Hancock Field,Nonhub
+DBQ,Dubuque Regional,Nonhub
+OWB,Owensboro/Daviess County Regional,Nonhub
+TUP,Tupelo Regional,Nonhub
+HYA,Cape Cod Gateway,Nonhub
+PQI,Presque Isle International,Nonhub
+RKS,Southwest Wyoming Regional,Nonhub
+ATY,Watertown Regional,Nonhub
+MCN,Middle Georgia Regional,Nonhub
+PAH,Barkley Regional,Nonhub
+WST,Westerly State,Nonhub
+BID,Block Island State,Nonhub
+MEI,Key Field,Nonhub
+HIB,Range Regional,Nonhub
+WRG,Wrangell,Nonhub
+BGM,Greater Binghamton/Edwin A Link Field,Nonhub
+MRI,Merrill Field,Nonhub
+PIB,Hattiesburg/Laurel Regional,Nonhub
+FNL,Northern Colorado Regional,Nonhub
+APN,Alpena County Regional,Nonhub
+CVN,Clovis Regional,Nonhub
+RIW,Central Wyoming Regional,Nonhub
+BFF,Western Nebraska Regional/William B Heilig Field,Nonhub
+BED,Laurence G Hanscom Field,Nonhub
+LBF,North Platte Regional/Lee Bird Field,Nonhub
+INL,Falls International/Einarson Field,Nonhub
+CDC,Cedar City Regional,Nonhub
+YAK,Yakutat,Nonhub
+OGD,Ogden-Hinckley,Nonhub
+PIH,Pocatello Regional,Nonhub
+TEX,Telluride Regional,Nonhub
+GRO,Benjamin Taisacan Manglona International,Nonhub
+JMS,Jamestown Regional,Nonhub
+MKG,Muskegon County,Nonhub
+VEL,Vernal Regional,Nonhub
+FHR,Friday Harbor,Nonhub
+BIH,Bishop,Nonhub
+GLH,Greenville Mid-Delta,Nonhub
+SHD,Shenandoah Valley Regional,Nonhub
+MWA,Veterans Airport of Southern Illinois,Nonhub
+GAL,Edward G Pitka Sr,Nonhub
+GST,Gustavus,Nonhub
+SBD,San Bernardino International,Nonhub
+HYS,Hays Regional,Nonhub
+LWB,Greenbrier Valley,Nonhub
+ALS,San Luis Valley Regional/Bergman Field,Nonprimary
+FXE,Fort Lauderdale Exec,Nonprimary
+DEC,Decatur,Nonprimary
+LEB,Lebanon Municipal,Nonprimary
+IPL,Imperial County,Nonprimary
+ENM,Emmonak,Nonprimary
+CGI,Cape Girardeau Regional,Nonprimary
+TVF,Thief River Falls Regional,Nonprimary
+EKO,Elko Regional,Nonprimary
+BHB,Hancock County/Bar Harbor,Nonprimary
+CEC,Jack McNamara Field,Nonprimary
+UNK,Unalakleet,Nonprimary
+LBL,Liberal Mid-America Regional,Nonprimary
+TBN,Waynesville-St Robert Regional Forney Field,Nonprimary
+PUB,Pueblo Memorial,Nonprimary
+OGS,Ogdensburg International,Nonprimary
+JST,John Murtha Johnstown/Cambria County,Nonprimary
+VCT,Victoria Regional,Nonprimary
+PVC,Provincetown Municipal,Nonprimary
+ORS,Orcas Island,Nonprimary
+DVL,Devils Lake Regional,Nonprimary
+WYS,Yellowstone,Nonprimary
+BKW,Raleigh County Memorial,Nonprimary
+MGW,Morgantown Municipal/Walter L Bill Hart Field,Nonprimary
+HNS,Haines,Nonprimary
+RKD,Knox County Regional,Nonprimary
+MAZ,Eugenio Maria De Hostos,Nonprimary
+MSL,Northwest Alabama Regional,Nonprimary
+IWD,Gogebic/Iron County,Nonprimary
+CEZ,Cortez Municipal,Nonprimary
+SKX,Taos Regional,Nonprimary
+SVC,Grant County,Nonprimary
+SDY,Sidney-Richland Regional,Nonprimary
+MCW,Mason City Municipal,Nonprimary
+DDC,Dodge City Regional,Nonprimary
+LUP,Kalaupapa,Nonprimary
+LNS,Lancaster,Nonprimary
+BBG,Branson,Nonprimary
+DUJ,Dubois Regional,Nonprimary
+HNH,Hoonah,Nonprimary
+AUG,Augusta State,Nonprimary
+HRO,Boone County,Nonprimary
+W33,Friday Harbor,Nonprimary
+VDZ,Valdez Pioneer Field,Nonprimary
+RUT,Rutland/Southern Vermont Regional,Nonprimary
+FOD,Fort Dodge Regional,Nonprimary
+CNM,Cavern City Air Terminal,Nonprimary
+SGY,Skagway,Nonprimary
+CXF,Coldfoot,Nonprimary
+MBL,Manistee County/Blacker,Nonprimary
+SLK,Adirondack Regional,Nonprimary
+PDT,Eastern Oregon Regional at Pendleton,Nonprimary
+PKB,Mid-Ohio Valley Regional,Nonprimary
+ILG,New Castle,Nonprimary
+HHR,Jack Northrop Field/Hawthorne Municipal,Nonprimary
+AQH,Quinhagak,Nonprimary
+HOT,Memorial Field,Nonprimary
+ANI,Aniak,Nonprimary
+VAK,Chevak,Nonprimary
+DTS,Destin Exec,Nonprimary
+UIN,Quincy Regional-Baldwin Field,Nonprimary
+FYU,Fort Yukon,Nonprimary
+MSS,Massena International-Richards Field,Nonprimary
+HPB,Hooper Bay,Nonprimary
+KSM,St Mary's,Nonprimary
+IRK,Kirksville Regional,Nonprimary
+SOW,Show Low Regional,Nonprimary
+BFD,Bradford Regional,Nonprimary
+AOO,Altoona/Blair County,Nonprimary
+MUE,Waimea-Kohala,Nonprimary
+GDV,Dawson Community,Nonprimary
+IIK,Kipnuk,Nonprimary
+AIA,Alliance Municipal,Nonprimary
+MMH,Mammoth Yosemite,Nonprimary
+ELD,South Arkansas Regional at Goodwin Field,Nonprimary
+JBR,Jonesboro Municipal,Nonprimary
+SOV,Seldovia,Nonprimary
+CRQ,McClellan-Palomar,Nonprimary
+CDR,Chadron Municipal,Nonprimary
+BRL,Southeast Iowa Regional,Nonprimary
+PHO,Point Hope,Nonprimary
+SHH,Shishmaref,Nonprimary
+SCM,Scammon Bay,Nonprimary
+WLK,Selawik,Nonprimary
+KAE,Kake,Nonprimary
+MCE,Merced Yosemite Regional,Nonprimary
+WTK,Noatak,Nonprimary
+MKL,McKellar-Sipes Regional,Nonprimary
+BVK,Buckland,Nonprimary
+OOK,Toksook Bay,Nonprimary
+CDB,Cold Bay,Nonprimary
+OLF,L M Clayton,Nonprimary
+Z09,Kasigluk,Nonprimary
+D76,Robert /Bob/ Curtis Memorial,Nonprimary
+SVA,Savoonga,Nonprimary
+GGW,Wokal Field/Glasgow-Valley County,Nonprimary
+SQL,San Carlos,Nonprimary
+S31,Lopez Island,Nonprimary
+KVL,Kivalina,Nonprimary
+2A3,Larsen Bay,Nonprimary
+CFK,Chefornak,Nonprimary
+HVR,Havre City-County,Nonprimary
+AWI,Wainwright,Nonprimary
+HLA,Huslia,Nonprimary
+GAM,Gambell,Nonprimary
+A61,Tuntutuliak,Nonprimary
+0AK,Pilot Station,Nonprimary
+DUY,Kongiganak,Nonprimary
+MCG,McGrath,Nonprimary
+ADK,Adak,Nonprimary
+EEK,Eek,Nonprimary
+AKP,Anaktuvuk Pass,Nonprimary
+HNM,Hana,Nonprimary
