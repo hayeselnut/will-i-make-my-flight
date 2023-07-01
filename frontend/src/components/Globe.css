@@ -20,3 +20,18 @@ body { margin: 0; padding: 0; }
 #btn-spin:hover {
     background-color: #4ea0da;
 }
+
+#fly {
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background: #ee8a65;
+}

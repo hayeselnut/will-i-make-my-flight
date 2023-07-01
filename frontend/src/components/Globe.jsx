@@ -6,9 +6,9 @@ const Globe = () => {
 	mapboxgl.accessToken = 'pk.eyJ1IjoiY2FsZWJyZWFsc211cmYiLCJhIjoiY2xqazVzN2JyMGZnYjNwcTk4eGZmbHk0aiJ9.gCudJOG6oeYzGsuTlstEkg';
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/satellite-v9',
+    style: 'mapbox://styles/calebrealsmurf/cljkaomqn001r01rdawnn0bwu',
     projection: 'globe', // Display the map as a globe, since satellite-v9 defaults to Mercator
-    zoom: 1.5,
+    zoom: 0.7,
     center: [-90, 40]
   });
   map.on('style.load', () => {
@@ -18,12 +18,8 @@ const Globe = () => {
       "high-color": ["interpolate",["exponential",1.2],["zoom"],0,"hsl(207, 100%, 50%)",8,"hsl(38, 63%, 84%)"],
       "space-color": ["interpolate",["exponential",1.2],["zoom"],5.5,"hsl(240, 46%, 11%)",6,"hsl(199, 61%, 87%)"],
       "horizon-blend": ["interpolate",["exponential",1.2],["zoom"],5.5,0.05,6,0.1],
-      "star-intensity":["interpolate",["exponential",1.2],["zoom"],5.5,0.1,6,0],
+      "star-intensity":["interpolate",["exponential",1.2],["zoom"],8,0.1,6,0],
     }); // Set the default atmosphere style
-    // set the colour of the map to be white
-    map.setPaintProperty({
-      "background-color": ["interpolate",["linear"],["zoom"],11,"hsl(35, 32%, 91%)",13,"hsl(35, 12%, 89%)"]
-    });
   });
 
   // The following values can be changed to control rotation speed:
@@ -56,32 +52,6 @@ const Globe = () => {
     }
   }
 
-  // Pause spinning on interaction
-  map.on('mousedown', () => {
-      userInteracting = true;
-  });
-
-  // Restart spinning the globe when interaction is complete
-  map.on('mouseup', () => {
-      userInteracting = false;
-      spinGlobe();
-  });
-
-  // These events account for cases where the mouse has moved
-  // off the map, so 'mouseup' will not be fired.
-  map.on('dragend', () => {
-      userInteracting = false;
-      spinGlobe();
-  });
-  map.on('pitchend', () => {
-      userInteracting = false;
-      spinGlobe();
-  });
-  map.on('rotateend', () => {
-      userInteracting = false;
-      spinGlobe();
-  });
-
   // When animation is complete, start spinning if there is no ongoing interaction
   map.on('moveend', () => {
       spinGlobe();
@@ -91,6 +61,21 @@ const Globe = () => {
 
   return (
     <>
+    <button id="fly"
+      onClick={() => {
+        map.flyTo({
+          center: [(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100],
+          essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+          zoom: 3,
+        }, {duration: 3000});
+
+        setTimeout(async () => {
+          map.stop();
+          console.log("STOP")
+        }, 3000);
+        }
+       }
+    >Fly</button>
     </>
   )
 }
