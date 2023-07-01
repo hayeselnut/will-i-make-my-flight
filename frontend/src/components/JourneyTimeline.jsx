@@ -218,7 +218,7 @@ const JourneyTimeline = ({
     predicted_bag_check === -1 ? eventsWithoutBag : eventsWithBag;
 
   return (
-    <FadeIn transitionDuration={6000}>
+    // <FadeIn transitionDuration={6000}>
       <Stepper size="lg" orientation="vertical" height="600px" gap="0">
         {eventsToDisplay.map(
           (
@@ -278,7 +278,6 @@ const JourneyTimeline = ({
           )
         )}
       </Stepper>
-    </FadeIn>
   );
 };
 

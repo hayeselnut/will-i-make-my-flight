@@ -4,6 +4,7 @@ import {
   Divider,
   Spinner,
   Center,
+  Button,
 } from "@chakra-ui/react";
 import { JourneyTimeline } from "../components";
 import { useOutletContext, useSearchParams } from "react-router-dom";
@@ -75,6 +76,7 @@ const Search = () => {
       }
 
       setLoaded(true);
+      console.log("FLYING OVER!");
       flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
     }, 1000);
 
@@ -85,10 +87,10 @@ const Search = () => {
 
   return loaded ? (
     <VStack>
-      <FadeIn transitionDuration={4000}>
+      {/* <FadeIn transitionDuration={4000}> */}
         <Text align="center" fontSize="3xl">You have a </Text>
-      </FadeIn>
-      <FadeIn transitionDuration={4000}>
+      {/* </FadeIn>
+      <FadeIn transitionDuration={4000}> */}
         <Text
           color={colorStyle(likelihood.percent_chance)}
           fontWeight={"bold"}
@@ -96,14 +98,14 @@ const Search = () => {
         >
           {likelihood.percent_chance}%
         </Text>
-        </FadeIn>
-      <FadeIn transitionDuration={4000}>
+        {/* </FadeIn> */}
+      {/* <FadeIn transitionDuration={4000}> */}
         <Text align="center" fontSize="3xl">chance of making your flight</Text>
-      </FadeIn>
+       {/* </FadeIn> */}
       <Divider marginTop="50px" marginBottom="50px" />
-        <FadeIn transitionDuration={6000}>
+         {/* <FadeIn transitionDuration={6000}> */}
           <Text marginBottom="30px">Your anticipated timeline is:</Text>
-        </FadeIn>
+         {/* </FadeIn> */}
       <JourneyTimeline likelihood={likelihood} />
     </VStack>
   ) : (
