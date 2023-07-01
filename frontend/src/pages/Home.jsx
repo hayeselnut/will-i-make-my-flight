@@ -16,6 +16,7 @@ import { createSearchParams, useNavigate } from "react-router-dom";
 import { Text } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import "./Background.css";
+import FadeIn from "react-fade-in";
 
 const Home = () => {
   const today = moment();
@@ -67,9 +68,11 @@ const Home = () => {
       <div id="lightblue">
         <Container>
           <Center>
-            <Heading size={"4xl"} marginTop="15vh">
-              Will I Make My Flight?
-            </Heading>
+            <FadeIn>
+              <Heading size={"4xl"} marginTop="15vh">
+                Will I Make My Flight?
+              </Heading>
+            </FadeIn>
           </Center>
           <Card padding={10} marginTop={"15vh"}>
             <FormControl>
