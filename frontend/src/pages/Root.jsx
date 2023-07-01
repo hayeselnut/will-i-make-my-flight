@@ -10,6 +10,9 @@ import mapboxgl from 'mapbox-gl';
 // import FadeIn from "react-fade-in";
 import "./Background.css";
 
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 const Root = () => {
   mapboxgl.accessToken = 'pk.eyJ1IjoiY2FsZWJyZWFsc211cmYiLCJhIjoiY2xqazVzN2JyMGZnYjNwcTk4eGZmbHk0aiJ9.gCudJOG6oeYzGsuTlstEkg';
   const map = new mapboxgl.Map({
