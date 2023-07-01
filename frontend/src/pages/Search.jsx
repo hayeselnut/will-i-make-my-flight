@@ -36,7 +36,6 @@ const Search = () => {
   const [loaded, setLoaded] = useState(false);
   const [likelihood, setLikelihood] = useState({});
   const flyTo = useOutletContext();
-  console.log(flyTo)
 
   useEffect(() => {
     const timer = setTimeout(async () => {
