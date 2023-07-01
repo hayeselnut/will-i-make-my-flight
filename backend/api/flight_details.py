@@ -12,7 +12,7 @@ def airline_from_flight_num(flight_num):
     match = re.search("^[A-Z]+", flight_num)
     if match:
         return match.group()
-    return "AB"
+    return "UA"
     
 
 def fetch_flight_details(flight_num, arrival_time):
