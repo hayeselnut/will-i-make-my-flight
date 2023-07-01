@@ -1,6 +1,6 @@
 from flask import Flask, request
 from flight_details import airline_from_flight_num, fetch_flight_details
-from predict import predict_bag_check, predict_security, predict_flight_delay, predict_walk_to_gate
+from predict import predict_bag_check, predict_security, predict_flight_delay, predict_walk_to_gate, calculate_confidence, will_make_it
 
 app = Flask(__name__)
 
@@ -40,19 +40,28 @@ def get_flight_likelihood():
     flight_delay = predict_flight_delay(departure_airport, airline, scheduled_departure_time)
     walk_to_gate = predict_walk_to_gate(departure_airport, gate)
 
+    if bag_check:
+        bag_check = predict_bag_check(departure_airport, airline, arrival_time)
+    else:
+        bag_check = { "time": -1, "confidence": -1 }
+
+    confidences = [security["confidence"], flight_delay["confidence"], walk_to_gate["confidence"]]
+    if bag_check["confidence"] != -1:
+        confidences.append(bag_check["confidence"])
+    
+    outcome = will_make_it(bag_check["time"], security["time"], walk_to_gate["time"], arrival_time, scheduled_departure_time, flight_delay["time"])
+
+    percent_chance = calculate_confidence(confidences, outcome)
+
     return_data = {
         "arrival_time": arrival_time, # UTC
         "departure_airport": departure_airport, # AIRPORT CODE
         "departure_time_scheduled": scheduled_departure_time, # UTC
-        "predicted_bag_check": -1, # FIXED amount of time for bag check in
+        "predicted_bag_check": bag_check["time"], # in minutes
         "predicted_security": security["time"], # in minutes
-        "predicted_flight_delay": flight_delay["time"], # in minutes
         "predicted_walk_to_gate": walk_to_gate["time"],
-        "percent_chance": 50,
+        "predicted_flight_delay": flight_delay["time"], # in minutes
+        "percent_chance": percent_chance
     }
-
-    if bag_check:
-        bag_check = predict_bag_check(departure_airport, airline, arrival_time)
-        return_data["predicted_bag_check"] = bag_check["time"]
 
     return return_data

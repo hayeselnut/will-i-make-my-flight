@@ -1,22 +1,18 @@
 import React, { useState } from "react";
 import moment from "moment";
 import {
-  Card,
-  Container,
   Center,
-  Heading,
   Input,
   FormControl,
   FormLabel,
   HStack,
   Select,
   Checkbox,
+  Text,
+  Button,
 } from "@chakra-ui/react";
 import { createSearchParams, useNavigate } from "react-router-dom";
-import { Text } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
 import "./Background.css";
-import FadeIn from "react-fade-in";
 
 const Home = () => {
   const today = moment();
@@ -30,12 +26,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const checkFields = () => {
-    if (
-      flightNumber === "" ||
-      day === "" ||
-      minutes === "" ||
-      hours === ""
-    ) {
+    if (flightNumber === "" || day === "" || minutes === "" || hours === "") {
       alert("Please fill in missing fields");
       return false;
     } else if (minutes.length !== 2 || hours.length !== 2) {
@@ -56,7 +47,13 @@ const Home = () => {
 
     const data = {
       flightNumber,
-      arrivalTime: new Date(momentDay.year(), momentDay.month(), momentDay.date(), hours, minutes),
+      arrivalTime: new Date(
+        momentDay.year(),
+        momentDay.month(),
+        momentDay.date(),
+        hours,
+        minutes
+      ),
       luggage,
     };
 
@@ -64,69 +61,63 @@ const Home = () => {
   };
 
   return (
-    <>
-      <div id="lightblue">
-        <Container>
-          <Center>
-            <FadeIn>
-              <Heading size={"4xl"} marginTop="15vh">
-                Will I Make My Flight?
-              </Heading>
-            </FadeIn>
-          </Center>
-          <Card padding={10} marginTop={"15vh"}>
-            <FormControl>
-              <FormLabel>Enter your flight number below</FormLabel>
-              <Input
-                type="text"
-                value={flightNumber}
-                onChange={(event) => setFlightNumber(event.target.value)}
-                placeholder="Flight number"
-              />
+    <FormControl>
+      <FormLabel>Enter your flight number below</FormLabel>
+      <Input
+        type="text"
+        value={flightNumber}
+        onChange={(event) => setFlightNumber(event.target.value)}
+        placeholder="Flight number"
+      />
 
-              <FormLabel marginTop={10}>
-                When are you arriving at the airport?
-              </FormLabel>
-              <HStack justifyContent={"center"}>
-                <Select onChange={(event) => setDay(event.target.value)} placeholder='Select day'>
-                  <option value={today.format("LL")}>{today.format("LL")}</option>
-                  <option value={tomorrow.format("LL")}>{tomorrow.format("LL")}</option>
-                </Select>
-                <Input
-                  type="number"
-                  placeholder="hh"
-                  onChange={(event) => setHours(event.target.value)}
-                  style={{ width: "80px" }}
-                />
-                <Text>:</Text>
-                <Input
-                  type="number"
-                  placeholder="mm"
-                  onChange={(event) => setMinutes(event.target.value)}
-                  style={{ width: "80px" }}
-                />
-              </HStack>
-              <HStack marginTop={10}>
-                <Checkbox onChange={(event) => setLuggage(event.target.checked)} value={luggage}>
-                  I am checking in luggage.
-                </Checkbox>
-              </HStack>
+      <FormLabel marginTop={10}>
+        When are you arriving at the airport?
+      </FormLabel>
+      <HStack justifyContent={"center"}>
+        <Select
+          onChange={(event) => setDay(event.target.value)}
+          placeholder="Select day"
+        >
+          <option value={today.format("LL")}>{today.format("LL")}</option>
+          <option value={tomorrow.format("LL")}>
+            {tomorrow.format("LL")}
+          </option>
+        </Select>
+        <Input
+          type="number"
+          placeholder="hh"
+          onChange={(event) => setHours(event.target.value)}
+          style={{ width: "80px" }}
+        />
+        <Text>:</Text>
+        <Input
+          type="number"
+          placeholder="mm"
+          onChange={(event) => setMinutes(event.target.value)}
+          style={{ width: "80px" }}
+        />
+      </HStack>
+      <HStack marginTop={10}>
+        <Checkbox
+          onChange={(event) => setLuggage(event.target.checked)}
+          value={luggage}
+          defaultChecked
+        >
+          I am checking in luggage.
+        </Checkbox>
+      </HStack>
 
-              <Center>
-                <Button
-                  marginTop={10}
-                  colorScheme="blue"
-                  onClick={searchFlight}
-                  type="submit"
-                >
-                  Search
-                </Button>
-              </Center>
-            </FormControl>
-          </Card>
-        </Container>
-      </div>
-    </>
+      <Center>
+        <Button
+          marginTop={10}
+          colorScheme="blue"
+          onClick={searchFlight}
+          type="submit"
+        >
+          Search
+        </Button>
+      </Center>
+    </FormControl>
   );
 };
 

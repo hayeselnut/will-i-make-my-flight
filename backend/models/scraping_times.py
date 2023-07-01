@@ -64,7 +64,7 @@ for j, suffix in enumerate(links_suffix):
         minute = str(value)
         master_schedule.append([airport, start_time, end_time, minute])
 
-with open('schedule_compilation.csv', mode='w') as file:
+with open('../data/schedule_compilation.csv', mode='w') as file:
     input = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     input.writerow(['airport', 'start_time', 'end_time', 'wait_time'])
     input.writerows(master_schedule)

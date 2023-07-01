@@ -1,17 +1,15 @@
 import {
-  Container,
   VStack,
   Text,
-  Card,
-  CardBody,
   Divider,
   Spinner,
   Center,
 } from "@chakra-ui/react";
 import { JourneyTimeline } from "../components";
-import { useSearchParams } from "react-router-dom";
+import { useOutletContext, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Background.css";
+import "./Globe.css";
 
 const dummyData = {
   percent_chance: 50,
@@ -37,6 +35,7 @@ const Search = () => {
   const [searchParams] = useSearchParams();
   const [loaded, setLoaded] = useState(false);
   const [likelihood, setLikelihood] = useState({});
+  const flyTo = useOutletContext();
 
   useEffect(() => {
     const timer = setTimeout(async () => {
@@ -77,6 +76,7 @@ const Search = () => {
       }
 
       setLoaded(true);
+      flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
     }, 1000);
 
     return () => {
@@ -84,36 +84,27 @@ const Search = () => {
     };
   }, [searchParams]);
 
-  return (
-    <div id="lightblue">
-      <Container paddingTop="40vh">
-        <Card>
-          <CardBody>
-            {loaded ? (
-              <VStack>
-                <Text
-                  color={colorStyle(likelihood.percent_chance)}
-                  fontWeight={"bold"}
-                  fontSize="6xl"
-                >
-                  {likelihood.percent_chance}%
-                </Text>
-                <Text>is the chance you will make your flight</Text>
+  return loaded ? (
+    <VStack>
+      <Text align="center" fontSize="3xl">You have a </Text>
+      <Text
+        color={colorStyle(likelihood.percent_chance)}
+        fontWeight={"bold"}
+        fontSize="9xl"
+      >
+        {likelihood.percent_chance}%
+      </Text>
+      <Text align="center" fontSize="3xl">chance of making your flight</Text>
 
-                <Divider marginTop="50px" marginBottom="50px" />
+      <Divider marginTop="50px" marginBottom="50px" />
 
-                <Text marginBottom="30px">Predicted timeline:</Text>
-                <JourneyTimeline likelihood={likelihood} />
-              </VStack>
-            ) : (
-              <Center>
-                <Spinner size="xl" />
-              </Center>
-            )}
-          </CardBody>
-        </Card>
-      </Container>
-    </div>
+      <Text marginBottom="30px">Your anticipated timeline is:</Text>
+      <JourneyTimeline likelihood={likelihood} />
+    </VStack>
+  ) : (
+    <Center height="350px">
+      <Spinner size="xl" />
+    </Center>
   );
 };
 
