@@ -1,19 +1,18 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import Typography from "@mui/material/Typography";
-import {
-  DriveEta,
-  FlightTakeoff,
-  Luggage,
-  SafetyCheck,
-} from "@mui/icons-material";
 import { addMinutes } from "../helpers";
-import { Badge } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  Step,
+  StepDescription,
+  StepIcon,
+  StepIndicator,
+  StepNumber,
+  StepSeparator,
+  StepStatus,
+  StepTitle,
+  Stepper,
+  useSteps,
+} from "@chakra-ui/react";
 
 const BAG_CHECK_MEDIUM = 30;
 const BAG_CHECK_SEVERE = 50;
@@ -42,45 +41,45 @@ const severityColor = (predicted, medium, severe) => {
   }
 };
 
-const Item = ({
-  idx,
-  maxIdx,
-  time,
-  icon,
-  label,
-  mainColor,
-  bottomColor,
-  badgeColor,
-  predictedDelay,
-}) => (
-  <TimelineItem>
-    <TimelineOppositeContent
-      sx={{ m: "auto 0" }}
-      variant="body2"
-      color="text.secondary"
-    >
-      {time}
-    </TimelineOppositeContent>
+// const Item = ({
+//   idx,
+//   maxIdx,
+//   time,
+//   icon,
+//   label,
+//   mainColor,
+//   bottomColor,
+//   badgeColor,
+//   predictedDelay,
+// }) => (
+//   <TimelineItem>
+//     <TimelineOppositeContent
+//       sx={{ m: "auto 0" }}
+//       variant="body2"
+//       color="text.secondary"
+//     >
+//       {time}
+//     </TimelineOppositeContent>
 
-    <TimelineSeparator>
-      {idx !== 0 && <TimelineConnector sx={{ bgcolor: mainColor }} />}
-      <TimelineDot color={"primary"}>{icon}</TimelineDot>
-      {idx !== maxIdx && <TimelineConnector sx={{ bgcolor: bottomColor }} />}
-    </TimelineSeparator>
+//     <TimelineSeparator>
+//       {idx !== 0 && <TimelineConnector sx={{ bgcolor: mainColor }} />}
+//       <TimelineDot color={"primary"}>{icon}</TimelineDot>
+//       {idx !== maxIdx && <TimelineConnector sx={{ bgcolor: bottomColor }} />}
+//     </TimelineSeparator>
 
-    <TimelineContent sx={{ py: "12px", px: 2 }}>
-      {<Badge color={badgeColor}>{predictedDelay} minutes</Badge>}
-      <Typography>
-        {label}
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </Typography>
-    </TimelineContent>
-  </TimelineItem>
-);
+//     <TimelineContent sx={{ py: "12px", px: 2 }}>
+//       {<Badge color={badgeColor}>{predictedDelay} minutes</Badge>}
+//       <Typography>
+//         {label}
+//         <br />
+//         <br />
+//         <br />
+//         <br />
+//         <br />
+//       </Typography>
+//     </TimelineContent>
+//   </TimelineItem>
+// );
 
 const JourneyTimeline = ({
   hasBagCheck, // boolean
@@ -95,7 +94,7 @@ const JourneyTimeline = ({
   const events = [
     {
       time: addMinutes(arrival_airport, 0),
-      icon: <DriveEta />,
+      icon: "",
       label: "Arrival",
       mainColor: "black",
       bottomColor: severityColor(
@@ -106,7 +105,7 @@ const JourneyTimeline = ({
     },
     {
       time: addMinutes(arrival_airport, predicted_bag_check),
-      icon: <Luggage />,
+      icon: "",
       label: "Bag check in",
       badgeColor: badgeColor(
         predicted_bag_check,
@@ -127,7 +126,7 @@ const JourneyTimeline = ({
     },
     {
       time: addMinutes(departure_time_scheduled, 0),
-      icon: <FlightTakeoff />,
+      icon: "",
       label: "Scheduled take off",
       mainColor: severityColor(
         predicted_flight_delay,
@@ -142,7 +141,7 @@ const JourneyTimeline = ({
         arrival_airport,
         predicted_bag_check + predicted_security
       ),
-      icon: <SafetyCheck />,
+      icon: "",
       label: "Security",
       badgeColor: badgeColor(
         predicted_security,
@@ -164,7 +163,7 @@ const JourneyTimeline = ({
 
     {
       time: addMinutes(departure_time_scheduled, predicted_flight_delay),
-      icon: <FlightTakeoff />,
+      icon: "",
       label: "Predicted take off",
       badgeColor: badgeColor(
         predicted_flight_delay,
@@ -181,37 +180,70 @@ const JourneyTimeline = ({
     },
   ];
 
+  const steps = [
+    { title: "First", description: "Contact Info" },
+    { title: "Second", description: "Date & Time" },
+    { title: "Third", description: "Select Rooms" },
+  ];
+
+  const { activeStep } = useSteps({
+    index: 1,
+    count: steps.length,
+  });
+
   return (
-    <Timeline>
-      {events.map(
-        (
-          {
-            time,
-            icon,
-            label,
-            mainColor,
-            bottomColor,
-            badgeColor,
-            predictedDelay,
-          },
-          idx
-        ) => (
-          <Item
-            key={label}
-            idx={idx}
-            maxIdx={events.length}
-            time={time}
-            icon={icon}
-            label={label}
-            mainColor={mainColor}
-            bottomColor={bottomColor}
-            badgeColor={badgeColor}
-            predictedDelay={predictedDelay}
-          />
-        )
-      )}
-    </Timeline>
+    <Stepper index={activeStep} orientation="vertical" height="400px" gap="0">
+      {steps.map((step, index) => (
+        <Step key={index}>
+          <StepIndicator>
+            <StepStatus
+              complete={<StepIcon />}
+              incomplete={<StepNumber />}
+              active={<StepNumber />}
+            />
+          </StepIndicator>
+
+          <Box flexShrink="0">
+            <StepTitle>{step.title}</StepTitle>
+            <StepDescription>{step.description}</StepDescription>
+          </Box>
+
+          <StepSeparator />
+        </Step>
+      ))}
+    </Stepper>
   );
 };
 
+// return (
+//   <Timeline>
+//     {events.map(
+//       (
+//         {
+//           time,
+//           icon,
+//           label,
+//           mainColor,
+//           bottomColor,
+//           badgeColor,
+//           predictedDelay,
+//         },
+//         idx
+//       ) => (
+//         <Item
+//           key={label}
+//           idx={idx}
+//           maxIdx={events.length}
+//           time={time}
+//           icon={icon}
+//           label={label}
+//           mainColor={mainColor}
+//           bottomColor={bottomColor}
+//           badgeColor={badgeColor}
+//           predictedDelay={predictedDelay}
+//         />
+//       )
+//     )}
+//   </Timeline>
+// );
 export default JourneyTimeline;
