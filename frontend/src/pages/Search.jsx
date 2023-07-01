@@ -16,7 +16,7 @@ import "./Background.css";
 const dummyData = {
   percent_chance: 50,
   departure_airport: "LAX", // AIRPORT CODE
-  departure_time_scheduled: "2023-07-01T10:30:37Z", // UTC
+  departure_time_scheduled: "2023-07-01T08:30:37Z", // UTC
   arrival_airport: "2023-07-01T09:07:37Z", // UTC
   predicted_bag_check: 20, // FIXED amount of time for bag check in
   predicted_security: 30, // in minutes

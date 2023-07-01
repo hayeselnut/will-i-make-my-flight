@@ -69,16 +69,76 @@ const dashedGrey = {
 };
 
 const JourneyTimeline = ({
-  hasBagCheck, // boolean
   likelihood: {
     departure_time_scheduled, // local time
     arrival_airport, // local time
-    predicted_bag_check, // FIXED amount of time for bag check in
+    predicted_bag_check, // FIXED amount of time for bag check in, -1 if null
     predicted_security, // in minutes
+    predicted_walk_to_gate, // in minutes
     predicted_flight_delay, // in minutes
   },
 }) => {
-  const events = [
+  const eventsWithoutBag = [
+    {
+      time: addMinutes(arrival_airport, 0),
+      label: "Arrival",
+      nextStyle: styleColor(predicted_security, SECURITY_MED, SECURITY_SEV),
+      icon: FaTaxi,
+      iconStyle: "var(--chakra-colors-gray-700)",
+    },
+    {
+      time: addMinutes(arrival_airport, predicted_security),
+      label: "Security",
+      predictedTime: predicted_security,
+      style: styleColor(predicted_security, SECURITY_MED, SECURITY_SEV),
+      badgeColor: badgeColor(predicted_security, SECURITY_MED, SECURITY_SEV),
+      icon: RiUserSearchFill,
+      iconStyle: "white",
+    },
+    {
+      time: addMinutes(
+        arrival_airport,
+        predicted_security + predicted_walk_to_gate
+      ),
+      label: "Walk to gate",
+      predictedTime: predicted_walk_to_gate,
+      icon: FaPersonWalkingLuggage,
+      iconStyle: bodyText,
+    },
+    {
+      time: addMinutes(departure_time_scheduled, 0),
+      label: "Scheduled take off",
+      icon: FaPlaneDeparture,
+      iconStyle: bodyText,
+      predictedTime: addMinutes(departure_time_scheduled, 0).diff(
+        addMinutes(
+          arrival_airport,
+          predicted_security + predicted_walk_to_gate
+        ),
+        "minutes"
+      ),
+      nextStyle: dashedGrey,
+    },
+    {
+      time: addMinutes(departure_time_scheduled, predicted_flight_delay),
+      label: "Predicted take off",
+      style: dashedGrey,
+      predictedTime: Math.min(
+        predicted_flight_delay,
+        addMinutes(departure_time_scheduled, predicted_flight_delay).diff(
+          addMinutes(
+            arrival_airport,
+            predicted_bag_check + predicted_security + predicted_walk_to_gate
+          ),
+          "minutes"
+        )
+      ),
+      iconStyle: bodyText,
+      icon: FaPlaneDeparture,
+    },
+  ];
+
+  const eventsWithBag = [
     {
       time: addMinutes(arrival_airport, 0),
       label: "Arrival",
@@ -107,20 +167,16 @@ const JourneyTimeline = ({
       badgeColor: badgeColor(predicted_security, SECURITY_MED, SECURITY_SEV),
       icon: RiUserSearchFill,
       iconStyle: "white",
-      // nextStyle: styleColor(predicted_flight_delay, FLIGHT_MED, FLIGHT_SEV),
     },
     {
       time: addMinutes(
         arrival_airport,
-        predicted_bag_check + predicted_security + 10
+        predicted_bag_check + predicted_security + predicted_walk_to_gate
       ),
       label: "Walk to gate",
-      predictedTime: 10,
+      predictedTime: predicted_walk_to_gate,
       icon: FaPersonWalkingLuggage,
       iconStyle: bodyText,
-      // style: styleColor(predicted_security, SECURITY_MED, SECURITY_SEV),
-      // badgeColor: badgeColor(predicted_security, SECURITY_MED, SECURITY_SEV),
-      // nextStyle: styleColor(predicted_flight_delay, FLIGHT_MED, FLIGHT_SEV),
     },
     {
       time: addMinutes(departure_time_scheduled, 0),
@@ -130,29 +186,37 @@ const JourneyTimeline = ({
       predictedTime: addMinutes(departure_time_scheduled, 0).diff(
         addMinutes(
           arrival_airport,
-          predicted_bag_check + predicted_security + 10
+          predicted_bag_check + predicted_security + predicted_walk_to_gate
         ),
         "minutes"
       ),
-      // style: styleColor(predicted_flight_delay, FLIGHT_MED, FLIGHT_SEV),
       nextStyle: dashedGrey,
-      // badgeColor: badgeColor(predicted_flight_delay, FLIGHT_MED, FLIGHT_SEV),
     },
     {
       time: addMinutes(departure_time_scheduled, predicted_flight_delay),
       label: "Predicted take off",
       style: dashedGrey,
-      predictedTime: predicted_flight_delay,
+      predictedTime: Math.min(
+        predicted_flight_delay,
+        addMinutes(departure_time_scheduled, predicted_flight_delay).diff(
+          addMinutes(
+            arrival_airport,
+            predicted_bag_check + predicted_security + predicted_walk_to_gate
+          ),
+          "minutes"
+        )
+      ),
       iconStyle: bodyText,
       icon: FaPlaneDeparture,
-      // nextStyle: styleColor(predicted_flight_delay, FLIGHT_MED, FLIGHT_SEV),
-      // badgeColor: badgeColor(predicted_flight_delay, FLIGHT_MED, FLIGHT_SEV),
     },
-  ].sort(({ time: timeA }, { time: timeB }) => timeA < timeB);
+  ];
+
+  const eventsToDisplay =
+    predicted_bag_check === -1 ? eventsWithoutBag : eventsWithBag;
 
   return (
     <Stepper size="lg" orientation="vertical" height="600px" gap="0">
-      {events.map(
+      {eventsToDisplay.map(
         (
           {
             label,
@@ -172,19 +236,35 @@ const JourneyTimeline = ({
             </StepIndicator>
 
             <Box flexShrink="0">
-              <StepTitle>{label}</StepTitle>
+              <StepTitle
+                style={
+                  predictedTime < 0
+                    ? {
+                        fontWeight: "bold",
+                        color: "var(--chakra-colors-red-500)",
+                      }
+                    : {}
+                }
+              >
+                {label}
+              </StepTitle>
               <StepDescription
                 style={{
                   position: "absolute",
                   top: "0.5rem",
                   marginLeft: "-8rem",
+                  fontWeight: predictedTime < 0 ? "bold" : "normal",
+                  color:
+                    predictedTime < 0 ? "var(--chakra-colors-red-500)" : "",
                 }}
               >
                 {time.format("LT")}
               </StepDescription>
               <StepDescription>
                 {predictedTime && (
-                  <Badge colorScheme={badgeColor}>{predictedTime} mins</Badge>
+                  <Badge colorScheme={predictedTime < 0 ? "red" : badgeColor}>
+                    {predictedTime} mins
+                  </Badge>
                 )}
               </StepDescription>
             </Box>
