@@ -54,13 +54,11 @@ const Search = () => {
         },
       };
 
-      const response = await fetch(
-        // TODO: endpoint
-        "http://localhost:3010/flightlikelihood",
-        options
-      );
-
       try {
+        const response = await fetch(
+          "http://localhost:3010/flightlikelihood",
+          options
+        );
         const json = await response.json();
 
         if (json.error) {
