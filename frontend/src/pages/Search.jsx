@@ -83,7 +83,7 @@ const Search = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  }, [searchParams]);
 
   return (
     <Container>
