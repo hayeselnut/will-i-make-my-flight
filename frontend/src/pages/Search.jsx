@@ -4,14 +4,13 @@ import {
   Divider,
   Spinner,
   Center,
-  Button,
 } from "@chakra-ui/react";
 import { JourneyTimeline } from "../components";
 import { useOutletContext, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Background.css";
 import "./Globe.css";
-import FadeIn from "react-fade-in";
+// import FadeIn from "react-fade-in";
 
 const dummyData = {
   percent_chance: 50,
@@ -83,7 +82,7 @@ const Search = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, [searchParams]);
+  }, [searchParams, flyTo]);
 
   return loaded ? (
     <VStack>

@@ -18,8 +18,8 @@ import {
   Stepper,
 } from "@chakra-ui/react";
 import React from "react";
-import FadeIn from "react-fade-in";
-import moment from "moment";
+// import FadeIn from "react-fade-in";
+// import moment from "moment";
 
 const BAG_CHECK_MED = 30;
 const BAG_CHECK_SEV = 50;
