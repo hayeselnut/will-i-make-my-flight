@@ -1,0 +1,622 @@
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+1,SO,GA,ATL,Atlanta,"Hartsfield - Jackson Atlanta
+International",P,L,"45,396,001","36,676,010",23.78%
+2,SW,TX,DFW,Fort Worth,Dallas-Fort Worth International,P,L,"35,345,138","30,005,266",17.80%
+3,NM,CO,DEN,Denver,Denver International,P,L,"33,773,832","28,645,527",17.90%
+4,GL,IL,ORD,Chicago,Chicago O'Hare International,P,L,"33,120,474","26,350,976",25.69%
+5,WP,CA,LAX,Los Angeles,Los Angeles International,P,L,"32,326,616","23,663,410",36.61%
+6,EA,NY,JFK,New York,John F Kennedy International,P,L,"26,919,982","15,273,342",76.25%
+7,WP,NV,LAS,Las Vegas,Harry Reid International,P,L,"25,480,500","19,160,342",32.99%
+8,SO,FL,MCO,Orlando,Orlando International,P,L,"24,469,733","19,618,838",24.73%
+9,SO,FL,MIA,Miami,Miami International,P,L,"23,949,892","17,500,096",36.86%
+10,SO,NC,CLT,Charlotte,Charlotte/Douglas International,P,L,"23,100,300","20,900,875",10.52%
+11,NM,WA,SEA,Seattle,Seattle-Tacoma International,P,L,"22,157,862","17,430,195",27.12%
+12,WP,AZ,PHX,Phoenix,Phoenix Sky Harbor International,P,L,"21,852,586","18,940,287",15.38%
+13,EA,NJ,EWR,Newark,Newark Liberty International,P,L,"21,572,147","14,514,049",48.63%
+14,WP,CA,SFO,San Francisco,San Francisco International,P,L,"20,411,420","11,725,347",74.08%
+15,SW,TX,IAH,Houston,George Bush Intcntl/Houston,P,L,"19,814,052","16,242,821",21.99%
+16,NE,MA,BOS,Boston,"General Edward Lawrence Logan
+International",P,L,"17,443,775","10,909,817",59.89%
+17,SO,FL,FLL,Fort Lauderdale,"Fort Lauderdale/Hollywood
+International",P,L,"15,370,165","13,598,994",13.02%
+18,GL,MN,MSP,Minneapolis,"Minneapolis-St Paul
+International/Wold-Chamberlain",P,L,"15,242,089","12,211,409",24.82%
+19,EA,NY,LGA,New York,Laguardia,P,L,"14,367,463","7,827,307",83.56%
+20,GL,MI,DTW,Detroit,Detroit Metro Wayne County,P,L,"13,751,197","11,517,696",19.39%
+21,EA,PA,PHL,Philadelphia,Philadelphia International,P,L,"12,421,168","9,820,222",26.49%
+22,NM,UT,SLC,Salt Lake City,Salt Lake City International,P,L,"12,383,843","10,795,906",14.71%
+23,EA,VA,DCA,Arlington,Ronald Reagan Washington Ntl,P,L,"11,553,850","6,731,737",71.63%
+24,WP,CA,SAN,San Diego,San Diego International,P,L,"11,162,224","7,836,360",42.44%
+25,EA,MD,BWI,Glen Burnie,"Baltimore/Washington International
+Thurgood Marshall",P,L,"11,151,169","9,253,561",20.51%
+26,SO,FL,TPA,Tampa,Tampa International,P,L,"10,539,459","8,847,197",19.13%
+27,SW,TX,AUS,Austin,Austin-Bergstrom International,P,L,"10,382,573","6,666,215",55.75%
+28,EA,VA,IAD,Dulles,Washington Dulles International,P,L,"10,266,324","7,227,875",42.04%
+29,SO,TN,BNA,Nashville,Nashville International,P,L,"9,829,062","7,594,049",29.43%
+30,GL,IL,MDW,Chicago,Chicago Midway International,P,L,"9,650,281","7,680,617",25.64%
+31,WP,HI,HNL,Honolulu,Daniel K Inouye International,P,L,"8,828,395","5,830,928",51.41%
+,,,31,Large Count,,,,,,
+32,SW,TX,DAL,Dallas,Dallas Love Field,P,M,"7,819,129","6,487,563",20.52%
+33,NM,OR,PDX,Portland,Portland International,P,M,"7,241,882","5,759,879",25.73%
+34,CE,MO,STL,St. Louis,St Louis Lambert International,P,M,"6,709,080","5,070,471",32.32%
+35,SW,TX,HOU,Houston,William P Hobby,P,M,"6,462,948","5,560,780",16.22%
+36,WP,CA,SMF,Sacramento,Sacramento International,P,M,"6,040,824","4,760,275",26.90%
+37,SW,LA,MSY,- Kenner,"Louis Armstrong New Orleans
+International",P,M,"5,931,899","4,017,147",47.66%
+38,SO,NC,RDU,Raleigh,Raleigh-Durham International,P,M,"5,849,665","4,311,049",35.69%
+39,WP,CA,SJC,San Jose,"Norman Y Mineta San Jose
+International",P,M,"5,590,137","3,619,690",54.44%
+40,WP,CA,SNA,Santa Ana,John Wayne/Orange County,P,M,"5,536,313","3,807,205",45.42%
+41,WP,CA,OAK,Oakland,Metro Oakland International,P,M,"5,506,232","4,011,953",37.25%
+42,SO,FL,RSW,Fort Myers,Southwest Florida International,P,M,"5,132,694","5,080,805",1.02%
+43,SO,PR,SJU,San Juan,Luis Munoz Marin International,P,M,"5,039,771","4,738,725",6.35%
+44,CE,MO,MCI,Kansas City,Kansas City International,P,M,"4,796,476","3,795,290",26.38%
+45,SW,TX,SAT,San Antonio,San Antonio International,P,M,"4,751,610","3,677,643",29.20%
+46,GL,OH,CLE,Cleveland,Cleveland-Hopkins International,P,M,"4,237,795","3,552,402",19.29%
+47,GL,IN,IND,Indianapolis,Indianapolis International,P,M,"4,209,416","3,487,100",20.71%
+48,WP,HI,OGG,Kahului,Kahului,P,M,"4,125,311","2,933,315",40.64%
+49,EA,PA,PIT,Pittsburgh,Pittsburgh International,P,M,"3,918,968","3,069,259",27.68%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+50,SO,KY,CVG,Hebron,"Cincinnati/Northern Kentucky
+International",P,M,"3,702,997","3,050,597",21.39%
+51,GL,OH,CMH,Columbus,John Glenn Columbus International,P,M,"3,618,555","2,825,259",28.08%
+52,SO,FL,PBI,"West Palm
+Beach",Palm Beach International,P,M,"3,257,730","2,567,897",26.86%
+53,SO,FL,JAX,Jacksonville,Jacksonville International,P,M,"3,177,393","2,425,685",30.99%
+54,WP,CA,BUR,Burbank,Bob Hope,P,M,"3,054,729","1,942,417",57.26%
+55,NE,CT,BDL,Windsor Locks,Bradley International,P,M,"2,844,713","2,273,259",25.14%
+56,WP,CA,ONT,Ontario,Ontario International,P,M,"2,840,758","2,201,528",29.04%
+57,GL,WI,MKE,Milwaukee,General Mitchell International,P,M,"2,660,187","2,231,010",19.24%
+58,SO,SC,CHS,Charleston,Charleston AFB/International,P,M,"2,608,497","2,015,277",29.44%
+59,AL,AK,ANC,Anchorage,"Ted Stevens Anchorage
+International",P,M,"2,604,308","2,184,959",19.19%
+60,SW,NM,ABQ,Albuquerque,Albuquerque International Sunport,P,M,"2,317,836","1,688,646",37.26%
+61,NM,ID,BOI,Boise,Boise Air Trml/Gowen Field,P,M,"2,230,467","1,809,000",23.30%
+62,CE,NE,OMA,Omaha,Eppley Airfield,P,M,"2,204,395","1,829,912",20.46%
+63,SO,TN,MEM,Memphis,Memphis International,P,M,"2,163,692","1,793,073",20.67%
+64,WP,NV,RNO,Reno,Reno/Tahoe International,P,M,"2,132,856","1,781,785",19.70%
+,,,33,Medium Count,,,,,,
+65,EA,VA,ORF,Norfolk,Norfolk International,P,S,"2,065,116","1,658,024",24.55%
+66,EA,VA,RIC,"Highland
+Springs",Richmond International,P,S,"2,042,834","1,603,149",27.43%
+67,EA,NY,BUF,Buffalo,Buffalo Niagara International,P,S,"2,007,508","1,427,891",40.59%
+68,WP,HI,KOA,Kailua Kona,"Ellison Onizuka Kona International
+at Keahole",P,S,"2,006,013","1,404,584",42.82%
+69,SW,TX,ELP,El Paso,El Paso International,P,S,"1,931,067","1,438,321",34.26%
+70,SW,OK,OKC,Oklahoma City,Will Rogers World,P,S,"1,928,418","1,632,197",18.15%
+71,SO,FL,SRQ,Sarasota,Sarasota/Bradenton International,P,S,"1,911,999","1,574,063",21.47%
+72,NM,WA,GEG,Spokane,Spokane International,P,S,"1,905,541","1,586,110",20.14%
+73,SO,KY,SDF,Louisville,"Louisville Muhammad Ali
+International",P,S,"1,893,647","1,529,472",23.81%
+74,WP,HI,LIH,Lihue,Lihue,P,S,"1,786,786","1,039,607",71.87%
+75,SO,GA,SAV,Savannah,Savannah/Hilton Head International,P,S,"1,726,444","1,360,214",26.92%
+76,GL,MI,GRR,Grand Rapids,Gerald R Ford International,P,S,"1,716,904","1,450,377",18.38%
+77,SO,SC,MYR,Myrtle Beach,Myrtle Beach International,P,S,"1,706,591","1,579,987",8.01%
+78,WP,AZ,TUS,Tucson,Tucson International,P,S,"1,699,305","1,323,536",28.39%
+79,WP,CA,LGB,Long Beach,Long Beach (Daugherty Field),P,S,"1,600,987","1,039,432",54.03%
+80,NE,RI,PVD,Warwick,"Rhode Island Tf Green
+International",P,S,"1,571,905","1,159,679",35.55%
+81,WP,CA,PSP,Palm Springs,Palm Springs International,P,S,"1,499,987","1,044,045",43.67%
+82,SW,OK,TUL,Tulsa,Tulsa International,P,S,"1,447,126","1,154,527",25.34%
+83,CE,IA,DSM,Des Moines,Des Moines International,P,S,"1,368,130","1,066,826",28.24%
+84,SO,FL,SFB,Sanford,Orlando Sanford International,P,S,"1,367,935","1,174,471",16.47%
+85,SO,AL,BHM,Birmingham,"Birmingham-Shuttlesworth
+International",P,S,"1,331,035","1,081,328",23.09%
+86,EA,NY,ALB,Albany,Albany International,P,S,"1,277,329","966,201",32.20%
+87,EA,NY,SYR,Syracuse,Syracuse Hancock International,P,S,"1,244,921","840,994",48.03%
+88,SO,FL,PIE,Clearwater,St Pete-Clearwater International,P,S,"1,221,120","1,021,007",19.60%
+89,SO,TN,TYS,Alcoa,McGhee Tyson,P,S,"1,216,383","976,601",24.55%
+90,SO,FL,PNS,Pensacola,Pensacola International,P,S,"1,211,919","1,168,575",3.71%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+91,EA,NY,ROC,Rochester,"Frederick Douglass/Greater
+Rochester International",P,S,"1,156,276","769,560",50.25%
+92,NM,MT,BZN,Bozeman,Bozeman Yellowstone International,P,S,"1,136,170","973,715",16.68%
+93,NM,CO,COS,"Colorado
+Springs",City of Colorado Springs Municipal,P,S,"1,080,060","941,917",14.67%
+94,WP,CA,FAT,Fresno,Fresno Yosemite International,P,S,"1,077,710","960,594",12.19%
+95,SO,SC,GSP,Greer,"Greenville Spartanburg
+International",P,S,"1,070,422","878,450",21.85%
+96,SO,FL,VPS,Valparaiso,Eglin AFB/Destin-Ft Walton Beach,P,S,"985,567","973,477",1.24%
+97,SW,AR,LIT,Little Rock,"Bill and Hillary Clinton Ntl/Adams
+Field",P,S,"983,530","827,922",18.80%
+98,NE,ME,PWM,Portland,Portland International Jetport,P,S,"982,834","854,142",15.07%
+99,WP,AZ,IWA,Mesa,Phoenix-Mesa Gateway,P,S,"973,491","795,407",22.39%
+100,SO,FL,PGD,Punta Gorda,Punta Gorda,P,S,"920,673","783,397",17.52%
+101,SO,NC,AVL,Asheville,Asheville Regional,P,S,"919,929","722,892",27.26%
+102,EA,NY,HPN,White Plains,Westchester County,P,S,"916,700","547,011",67.58%
+103,GL,WI,MSN,Madison,Dane County Regional/Truax Field,P,S,"916,230","699,167",31.05%
+104,SW,AR,XNA,Bentonville,Northwest Arkansas Ntl,P,S,"812,848","598,787",35.75%
+105,SO,NC,GSO,Greensboro,Piedmont Triad International,P,S,"791,955","627,000",26.31%
+106,NM,OR,EUG,Eugene,Mahlon Sweet Field,P,S,"781,745","566,111",38.09%
+107,CE,KS,ICT,Wichita,Wichita Dwight D Eisenhower Ntl,P,S,"762,443","633,562",20.34%
+108,SO,FL,ECP,Panama City,"Northwest Florida Beaches
+International",P,S,"746,521","794,846",-6.08%
+109,SO,VI,STT,"Charlotte
+Amalie",Cyril E King,P,S,"719,594","731,693",-1.65%
+110,SO,FL,EYW,Key West,Key West International,P,S,"708,807","741,130",-4.36%
+111,NE,NH,MHT,Manchester,Manchester Boston Regional,P,S,"643,641","478,143",34.61%
+112,WP,HI,ITO,Hilo,Hilo International,P,S,"636,426","358,471",77.54%
+113,SW,TX,MAF,Midland,"Midland International Air And
+Space Port",P,S,"633,964","504,264",25.72%
+114,EA,PA,MDT,Harrisburg,Harrisburg International,P,S,"625,698","512,251",22.15%
+115,EA,NY,ISP,Islip,Long Island MacArthur,P,S,"611,749","553,430",10.54%
+116,CE,IA,CID,Cedar Rapids,The Eastern Iowa,P,S,"611,010","531,295",15.00%
+117,WP,CA,SBA,Santa Barbara,Santa Barbara Municipal,P,S,"610,916","440,229",38.77%
+118,GL,SD,FSD,Sioux Falls,Joe Foss Field,P,S,"606,055","501,423",20.87%
+119,NE,VT,BTV,Burlington,Burlington International,P,S,"601,441","382,744",57.14%
+120,SO,MS,JAN,Jackson,"Jackson-Medgar Wiley Evers
+International",P,S,"598,799","466,067",28.48%
+121,SO,AL,HSV,Huntsville,"Huntsville International-Carl T
+Jones Field",P,S,"587,572","459,759",27.80%
+122,SO,KY,LEX,Lexington,Blue Grass,P,S,"577,424","464,313",24.36%
+123,GL,OH,DAY,Dayton,James M Cox Dayton International,P,S,"559,347","517,621",8.06%
+124,CE,MO,SGF,Springfield,Springfield-Branson Ntl,P,S,"539,571","480,975",12.18%
+125,SO,NC,ILM,Wilmington,Wilmington International,P,S,"537,591","462,572",16.22%
+126,NM,OR,RDM,Redmond,Roberts Field,P,S,"513,659","422,214",21.66%
+127,AL,AK,FAI,Fairbanks,Fairbanks International,P,S,"513,155","450,694",13.86%
+128,SW,TX,HRL,Harlingen,Valley International,P,S,"508,867","355,190",43.27%
+129,SO,SC,CAE,Columbia,Columbia Metro,P,S,"504,625","418,391",20.61%
+130,NM,OR,MFR,Medford,"Rogue Valley International -
+Medford",P,S,"504,085","437,079",15.33%
+131,SW,TX,LBB,Lubbock,"Lubbock Preston Smith
+International",P,S,"489,710","405,157",20.87%
+132,GL,ND,FAR,Fargo,Hector International,P,S,"463,181","408,477",13.39%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+133,EA,NJ,ACY,Atlantic City,Atlantic City International,P,S,"459,272","426,686",7.64%
+134,SW,TX,MFE,McAllen,McAllen International,P,S,"452,925","477,636",-5.17%
+135,SO,TN,CHA,Chattanooga,Lovell Field,P,S,"431,984","377,726",14.36%
+136,WP,GU,GUM,Tamuning,Guam International,P,S,"425,651","150,718",182.42%
+137,NM,MT,MSO,Missoula,Missoula Montana,P,S,"425,093","384,925",10.44%
+,,,73,Small Count,,,,,,
+138,NM,MT,GPI,Kalispell,Glacier Park International,P,N,"420,635","418,094",0.61%
+139,EA,PA,ABE,Allentown,Lehigh Valley International,P,N,"419,772","355,841",17.97%
+140,GL,WI,ATW,Appleton,Appleton International,P,N,"416,390","352,006",18.29%
+141,NM,WY,JAC,Jackson,Jackson Hole,P,N,"399,897","497,548",-19.63%
+142,SO,FL,TLH,Tallahassee,Tallahassee International,P,N,"397,029","319,886",24.12%
+143,NM,WA,PSC,Pasco,Tri-Cities,P,N,"390,762","347,438",12.47%
+144,NM,MT,BIL,Billings,Billings Logan International,P,N,"386,948","379,300",2.02%
+145,AL,AK,JNU,Juneau,Juneau International,P,N,"385,178","306,512",25.66%
+146,GL,IN,SBN,South Bend,South Bend International,P,N,"363,078","341,343",6.37%
+147,GL,IN,FWA,Fort Wayne,Fort Wayne International,P,N,"359,800","335,804",7.15%
+148,SW,TX,AMA,Amarillo,"Rick Husband Amarillo
+International",P,N,"358,360","303,904",17.92%
+149,NE,CT,HVN,New Haven,Tweed/New Haven,P,N,"351,867","29,732",1083.46%
+150,SO,PR,BQN,Aguadilla,Rafael Hernandez,P,N,"346,166","228,524",51.48%
+151,NE,ME,BGR,Bangor,Bangor International,P,N,"343,528","298,582",15.05%
+152,SO,MS,GPT,Gulfport,Gulfport-Biloxi International,P,N,"339,323","317,112",7.00%
+153,SO,FL,MLB,Melbourne,Melbourne Orlando International,P,N,"339,139","176,820",91.80%
+154,SW,LA,BTR,Baton Rouge,"Baton Rouge Metro, Ryan Field",P,N,"332,335","279,159",19.05%
+155,GL,SD,RAP,Rapid City,Rapid City Regional,P,N,"331,345","337,788",-1.91%
+156,EA,NJ,TTN,Trenton,Trenton Mercer,P,N,"328,511","243,529",34.90%
+157,NM,WA,BLI,Bellingham,Bellingham International,P,N,"321,487","160,160",100.73%
+158,SW,TX,CRP,Corpus Christi,Corpus Christi International,P,N,"319,687","285,195",12.09%
+159,NM,ID,IDA,Idaho Falls,Idaho Falls Regional,P,N,"308,414","217,863",41.56%
+160,WP,CA,STS,Santa Rosa,"Charles M Schulz - Sonoma
+County",P,N,"304,053","216,059",40.73%
+161,GL,WI,GRB,Green Bay,"Green Bay/Austin Straubel
+International",P,N,"301,377","264,755",13.83%
+162,EA,VA,ROA,Roanoke,"Roanoke/Blacksburg Regional
+(Woodrum Field)",P,N,"299,858","242,814",23.49%
+163,NM,CO,ASE,Aspen,Aspen-Pitkin County/Sardy Field,P,N,"299,840","248,781",20.52%
+164,GL,MI,FNT,Flint,Bishop International,P,N,"299,782","241,651",24.06%
+165,GL,MI,TVC,Traverse City,Cherry Capital,P,N,"288,850","299,027",-3.40%
+166,GL,IL,PIA,Peoria,"General Downing - Peoria
+International",P,N,"284,322","237,442",19.74%
+167,SO,FL,DAB,Daytona Beach,Daytona Beach International,P,N,"280,536","275,166",1.95%
+168,WP,CA,SBP,"San Luis
+Obispo",San Luis County Regional,P,N,"273,690","200,634",36.41%
+169,SW,LA,SHV,Shreveport,Shreveport Regional,P,N,"272,981","246,772",10.62%
+170,SO,GA,AGS,Augusta,Augusta Regional at Bush Field,P,N,"269,937","251,961",7.13%
+171,GL,IL,MLI,Moline,Quad Cities International,P,N,"269,885","246,248",9.60%
+172,SO,FL,GNV,Gainesville,Gainesville Regional,P,N,"266,349","200,444",32.88%
+173,GL,OH,CAK,Akron,Akron-Canton Regional,P,N,"265,889","204,990",29.71%
+174,EA,VA,CHO,Charlottesville- Albemarle Airport,Charlottesville-Albemarle,P,N,"262,725","214,395",22.54%
+175,SO,AL,MOB,Mobile,Mobile Regional,P,N,"262,048","236,007",11.03%
+176,NM,WA,PAE,Everett,Snohomish County (Paine Field),P,N,"260,724","114,988",126.74%
+177,GL,ND,BIS,Bismarck,Bismarck Municipal,P,N,"242,918","215,056",12.96%
+178,NM,CO,MTJ,Montrose,Montrose Regional,P,N,"233,094","188,355",23.75%
+179,WP,CA,MRY,Monterey,Monterey Regional,P,N,"230,669","188,658",22.27%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+180,SW,LA,LFT,Lafayette,"Lafayette Regional/Paul Fournet
+Field",P,N,"226,249","208,047",8.75%
+181,NM,CO,GJT,Grand Junction,Grand Junction Regional,P,N,"221,682","252,290",-12.13%
+182,NM,CO,EGE,Eagle,Eagle County Regional,P,N,"214,998","201,752",6.57%
+183,NM,UT,PVU,Provo,Provo Municipal,P,N,"211,741","118,740",78.32%
+184,SO,VI,STX,Christiansted,Henry E Rohlsen,P,N,"204,320","218,795",-6.62%
+185,NM,CO,HDN,Hayden,Yampa Valley,P,N,"197,088","150,142",31.27%
+186,SO,TN,TRI,"Bristol/Johnson/
+Kingsport",Tri-Cities,P,N,"191,882","157,214",22.05%
+187,EA,PA,AVP,Avoca,Wilkes-Barre/Scranton International,P,N,"190,406","157,503",20.89%
+188,NM,CO,DRO,Durango,Durango-La Plata County,P,N,"183,273","200,245",-8.48%
+189,GL,IL,BMI,"Bloomington-
+Normal Airport","Central Il Regional/Bloomington-
+Normal",P,N,"175,665","159,897",9.86%
+190,SO,NC,FAY,Fayetteville,Fayetteville Regional/Grannis Field,P,N,"165,721","188,451",-12.06%
+191,EA,WV,CRW,Charleston,West Virginia International Yeager,P,N,"164,240","149,006",10.22%
+192,GL,IL,BLV,Belleville,Scott AFB/Midamerica St Louis,P,N,"162,819","161,562",0.78%
+193,EA,NY,SWF,Newburgh,New York Stewart International,P,N,"154,070","69,649",121.21%
+194,GL,IN,EVV,Evansville,Evansville Regional,P,N,"153,652","164,807",-6.77%
+195,SO,AL,MGM,Montgomery,"Montgomery Regional (Dannelly
+Field)",P,N,"151,755","129,033",17.61%
+196,GL,OH,LCK,Columbus,Rickenbacker International,P,N,"147,957","148,397",-0.30%
+197,SW,LA,AEX,Alexandria,Alexandria International,P,N,"147,059","144,218",1.97%
+198,AL,AK,KTN,Ketchikan,Ketchikan International,P,N,"143,786","117,728",22.13%
+199,AL,AK,BET,Bethel,Bethel,P,N,"142,256","105,877",34.36%
+200,NM,MT,GTF,Great Falls,Great Falls International,P,N,"141,802","132,267",7.21%
+201,WP,CA,BFL,Bakersfield,Meadows Field,P,N,"141,352","131,327",7.63%
+202,NE,MA,ACK,Nantucket,Nantucket Memorial,P,N,"140,621","135,526",3.76%
+203,SW,TX,LRD,Laredo,Laredo International,P,N,"139,396","108,992",27.90%
+204,GL,ND,MOT,Minot,Minot International,P,N,"139,351","126,575",10.09%
+205,SO,NC,OAJ,Jacksonville,Albert J Ellis,P,N,"138,235","162,567",-14.97%
+207,NM,UT,SGU,St. George,St George Regional,P,N,"128,453","153,200",-16.15%
+208,SW,TX,BRO,Brownsville,"Brownsville/South Padre Island
+International",P,N,"127,239","167,957",-24.24%
+209,SW,TX,GRK,Killeen,Robert Gray AAF,P,N,"126,160","142,253",-11.31%
+210,EA,PA,LBE,Latrobe,Arnold Palmer Regional,P,N,"124,422","124,514",-0.07%
+211,SO,NC,JQF,Concord,Concord-Padgett Regional,P,N,"124,276","139,173",-10.70%
+212,SW,NM,SAF,Santa Fe,Santa Fe Regional,P,N,"123,452","94,906",30.08%
+213,WP,AZ,NYL,Yuma,Yuma MCAS/Yuma International,P,N,"121,864","110,182",10.60%
+214,GL,IL,RFD,Rockford,Chicago/Rockford International,P,N,"121,544","102,779",18.26%
+215,WP,CA,ACV,Arcata,"California Redwood Coast-
+Humboldt County",P,N,"118,924","94,652",25.64%
+216,GL,MN,DLH,Duluth,Duluth International,P,N,"118,242","108,585",8.89%
+217,SO,SC,HXD,"Hilton Head
+Island",Hilton Head,P,N,"114,475","176,371",-35.09%
+218,EA,PA,UNV,State College,University Park,P,N,"112,474","122,404",-8.11%
+219,SO,PR,PSE,Ponce,Mercedita,P,N,"109,691","32,584",236.64%
+220,WP,MP,GSN,Saipan,"Francisco C Ada/Saipan
+International",P,N,"102,781","58,382",76.05%
+221,NM,ID,SUN,Hailey,Friedman Memorial,P,N,"100,586","94,166",6.82%
+222,WP,CA,RDD,Redding,Redding Regional,P,N,"98,725","58,295",69.35%
+223,WP,HI,MKK,Kaunakakai,Molokai,P,N,"98,223","68,251",43.91%
+224,AL,AK,SIT,Sitka,Sitka Rocky Gutierrez,P,N,"94,648","80,366",17.77%
+225,CE,NE,LNK,Lincoln,Lincoln,P,N,"93,953","93,740",0.23%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+226,WP,AZ,FLG,- Flagstaff,Flagstaff Pulliam,P,N,"92,535","115,596",-19.95%
+227,EA,WV,HTS,Huntington,Tri-State/Milton J Ferguson Field,P,N,"91,091","94,973",-4.09%
+228,GL,ND,GFK,Grand Forks,Grand Forks International,P,N,"89,819","69,800",28.68%
+229,SW,LA,MLU,Monroe,Monroe Regional,P,N,"89,347","84,693",5.50%
+230,GL,OH,TOL,Toledo,Eugene F Kranz Toledo Express,P,N,"85,451","85,599",-0.17%
+231,GL,MN,RST,Rochester,Rochester International,P,N,"84,504","98,975",-14.62%
+232,SO,GA,CSG,Columbus,Columbus,P,N,"84,387","56,520",49.30%
+233,GL,MI,LAN,"Clinton
+(Township of)",Capital Region International,P,N,"83,426","94,151",-11.39%
+234,AL,AK,ADQ,Kodiak,Kodiak,P,N,"82,913","72,905",13.73%
+235,NM,MT,HLN,Helena,Helena Regional,P,N,"82,191","71,305",15.27%
+236,EA,NY,ELM,Elmira,Elmira/Corning Regional,P,N,"81,796","76,947",6.30%
+237,CE,MO,COU,Columbia,Columbia Regional,P,N,"81,643","79,775",2.34%
+238,EA,VA,PHF,Newport News,"Newport News/Williamsburg
+International",P,N,"80,228","83,943",-4.43%
+239,NE,MA,ORH,Worcester,Worcester Regional,P,N,"80,089","14,301",460.02%
+240,CE,KS,MHK,Manhattan,Manhattan Regional,P,N,"79,050","60,030",31.68%
+241,GL,WI,CWA,Mosinee,Central Wisconsin,P,N,"78,189","98,087",-20.29%
+242,EA,VA,LYH,Timberlake,"Lynchburg Regional/Preston Glenn
+Field",P,N,"76,642","70,458",8.78%
+243,AL,AK,ENA,Kenai,Kenai Municipal,P,N,"75,088","68,044",10.35%
+244,NM,WA,PUW,Pullman,Pullman/Moscow Regional,P,N,"75,027","54,473",37.73%
+245,EA,NY,PBG,Plattsburgh,Plattsburgh International,P,N,"74,668","40,751",83.23%
+246,WP,CA,SCK,Stockton,Stockton Metro,P,N,"74,529","69,235",7.65%
+247,AL,AK,SCC,Deadhorse,Deadhorse,P,N,"73,334","64,245",14.15%
+248,NM,WY,CPR,Casper,"Casper/Natrona County
+International",P,N,"72,645","66,629",9.03%
+249,GL,MI,AZO,Kalamazoo,"Kalamazoo/Battle Creek
+International",P,N,"72,551","79,542",-8.79%
+250,GL,IL,SPI,Springfield,Abraham Lincoln Capital,P,N,"72,466","60,949",18.90%
+251,SW,TX,ABI,Abilene,Abilene Regional,P,N,"70,419","75,402",-6.61%
+252,GL,MI,MBS,Saginaw,MBS International,P,N,"70,172","68,806",1.99%
+253,NE,MA,MVY,Vineyard Haven,Martha's Vineyard,P,N,"70,098","67,789",3.41%
+254,GL,ND,XWA,Williston,Williston Basin International,P,N,"66,287","46,577",42.32%
+255,CE,NE,GRI,Grand Island,Central Nebraska Regional,P,N,"65,795","55,904",17.69%
+256,GL,WI,LSE,La Crosse,La Crosse Regional,P,N,"65,268","82,683",-21.06%
+257,GL,IL,CMI,Savoy,University of Illinois/Willard,P,N,"64,715","56,700",14.14%
+258,NE,NH,PSM,Portsmouth,Portsmouth International at Pease,P,N,"64,314","66,972",-3.97%
+259,SO,NC,EWN,New Bern,Coastal Carolina Regional,P,N,"64,011","76,228",-16.03%
+260,WP,NV,BVU,Boulder City,Boulder City Municipal,P,N,"63,243","27,984",126.00%
+261,AL,AK,OME,Nome,Nome,P,N,"62,785","46,645",34.60%
+262,EA,PA,ERI,Erie,Erie International/Tom Ridge Field,P,N,"61,860","69,170",-10.57%
+263,SW,LA,LCH,Lake Charles,Lake Charles Regional,P,N,"61,288","52,726",16.24%
+264,SW,AR,FSM,Fort Smith,Fort Smith Regional,P,N,"59,688","45,369",31.56%
+265,EA,NY,IAG,Niagara Falls,Niagara Falls International,P,N,"58,741","42,471",38.31%
+266,AL,AK,OTZ,Kotzebue,Ralph Wien Memorial,P,N,"56,851","46,305",22.78%
+267,EA,NY,ITH,Ithaca,Ithaca Tompkins International,P,N,"56,509","57,750",-2.15%
+268,SW,NM,ROW,Roswell,Roswell Air Center,P,N,"55,563","44,879",23.81%
+269,WP,AZ,IFP,Bullhead City,Laughlin/Bullhead International,P,N,"55,106","50,814",8.45%
+270,SW,TX,ACT,Waco,Waco Regional,P,N,"54,899","47,541",15.48%
+271,SW,TX,CLL,College Station,Easterwood Field,P,N,"54,542","67,033",-18.63%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+272,SW,TX,SJT,San Angelo,San Angelo Regional/Mathis Field,P,N,"54,347","60,115",-9.59%
+273,NM,CO,GUC,Gunnison,Gunnison-Crested Butte Regional,P,N,"52,040","38,783",34.18%
+274,EA,MD,SBY,Salisbury,"Salisbury-Ocean City Wicomico
+Regional",P,N,"47,275","58,574",-19.29%
+275,EA,WV,CKB,Clarksburg,North Central West Virginia,P,N,"46,508","37,165",25.14%
+276,SO,MS,GTR,Columbus,Golden Triangle Regional,P,N,"42,896","36,235",18.38%
+277,GL,MI,SAW,Gwinn,Marquette/Sawyer Regional,P,N,"42,664","51,846",-17.71%
+279,SW,OK,LAW,Lawton,Lawton-Fort Sill Regional,P,N,"41,890","39,336",6.49%
+280,NM,ID,LWS,Lewiston,Lewiston/Nez Perce County,P,N,"41,720","30,892",35.05%
+281,SW,TX,TYR,Tyler,Tyler Pounds Regional,P,N,"40,548","39,943",1.51%
+282,SO,PR,VQS,Vieques,Antonio Rivera Rodriguez,P,N,"39,529","36,748",7.57%
+283,SO,AL,DHN,Dothan,Dothan Regional,P,N,"38,517","37,047",3.97%
+284,SO,GA,VLD,Valdosta,Valdosta Regional,P,N,"38,517","38,736",-0.57%
+285,WP,HI,LNY,Lanai City,Lanai,P,N,"37,741","24,226",55.79%
+286,NM,WY,COD,Cody,Yellowstone Regional,P,N,"37,729","37,349",1.02%
+287,AL,AK,AKN,King Salmon,King Salmon,P,N,"37,574","29,914",25.61%
+288,AL,AK,BRW,Barrow,Wiley Post-Will Rogers Memorial,P,N,"37,530","31,898",17.66%
+289,NM,WA,YKM,Yakima,Yakima Air Trml/McAllister Field,P,N,"36,383","46,658",-22.02%
+290,SW,AR,TXK,Texarkana,Texarkana Regional-Webb Field,P,N,"35,590","26,888",32.36%
+291,AL,AK,HOM,Homer,Homer,P,N,"35,403","30,972",14.31%
+292,SO,GA,ABY,Albany,Southwest Georgia Regional,P,N,"35,023","31,796",10.15%
+293,NM,WA,EAT,"East
+Wenatchee",Pangborn Memorial,P,N,"34,721","48,344",-28.18%
+294,SO,GA,BQK,Brunswick,Brunswick Golden Isles,P,N,"34,373","35,856",-4.14%
+295,NM,WA,ALW,Walla Walla,Walla Walla Regional,P,N,"33,821","39,138",-13.59%
+296,AL,AK,DLG,Dillingham,Dillingham,P,N,"32,805","25,988",26.23%
+297,WP,AZ,1G4,Peach Springs,Grand Canyon West,P,N,"32,726","18,498",76.92%
+298,SO,NC,PGV,Greenville,Pitt-Greenville,P,N,"32,448","34,778",-6.70%
+299,EA,MD,HGR,Hagerstown,"Hagerstown Regional/Richard A
+Henson Field",P,N,"32,197","23,227",38.62%
+300,CE,KS,GCK,Garden City,Garden City Regional,P,N,"29,628","28,525",3.87%
+302,SO,SC,FLO,Florence,Florence Regional,P,N,"29,064","23,028",26.21%
+303,SO,PR,RVR,Ceiba,Jose Aponte De La Torre,P,N,"28,966","30,457",-4.90%
+304,SW,OK,SWO,Stillwater,Stillwater Regional,P,N,"28,867","20,328",42.01%
+305,SW,TX,SPS,Wichita Falls,"Sheppard AFB/Wichita Falls
+Municipal",P,N,"27,720","32,038",-13.48%
+306,WP,MP,TNI,"Tinian
+(Municipality)",Tinian International,P,N,"26,926","24,169",11.41%
+307,SW,TX,DRT,Del Rio,Del Rio International,P,N,"26,641","19,879",34.02%
+308,GL,MN,BJI,Bemidji,Bemidji Regional,P,N,"26,478","25,994",1.86%
+309,SW,TX,GGG,Longview,East Texas Regional,P,N,"25,982","23,942",8.52%
+310,CE,IA,SUX,Sioux City,"Sioux Gateway/Brig General Bud
+Day Field",P,N,"25,874","31,101",-16.81%
+311,GL,MI,PLN,Pellston,Pellston Regional/Emmet County,P,N,"25,408","29,241",-13.11%
+312,NM,WY,SHR,Sheridan,Sheridan County,P,N,"25,104","23,920",4.95%
+313,SW,TX,BPT,Beaumont,Jack Brooks Regional,P,N,"24,882","21,914",13.54%
+314,NM,WY,GCC,Gillette,Northeast Wyoming Regional,P,N,"24,144","23,873",1.14%
+315,WP,AZ,PRC,Prescott,"Prescott Regional - Ernest A Love
+Field",P,N,"24,100","23,598",2.13%
+316,AL,AK,PSG,Petersburg,Petersburg James A Johnson,P,N,"23,955","20,690",15.78%
+317,GL,MI,CMX,Hancock,Houghton County Memorial,P,N,"22,672","21,046",7.73%
+318,CE,NE,EAR,Kearney,Kearney Regional,P,N,"22,283","25,355",-12.12%
+319,GL,MI,CIU,Sault Ste. Marie,Chippewa County International,P,N,"22,147","17,356",27.60%
+320,SO,PR,CPX,Culebra,Benjamin Rivera Noriega,P,N,"21,788","27,023",-19.37%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+321,GL,SD,ABR,Aberdeen,Aberdeen Regional,P,N,"21,776","21,850",-0.34%
+322,NM,WA,BFI,Seattle,"Boeing Field/King County
+International",P,N,"21,717","17,774",22.18%
+323,WP,AS,PPG,Pago Pago,Pago Pago International,P,N,"21,690","8,000",171.13%
+324,GL,ND,DIK,Dickinson,"Dickinson/Theodore Roosevelt
+Regional",P,N,"21,606","17,506",23.42%
+326,AL,AK,DUT,Unalaska,Unalaska,P,N,"21,034","19,099",10.13%
+327,GL,WI,RHI,Rhinelander,Rhinelander/Oneida County,P,N,"20,922","26,252",-20.30%
+328,CE,MO,JLN,Joplin,Joplin Regional,P,N,"20,786","26,698",-22.14%
+329,GL,MI,IMT,Iron Mountain,Ford,P,N,"20,727","14,863",39.45%
+330,WP,AZ,PGA,Page,Page Municipal,P,N,"20,403","14,340",42.28%
+331,EA,NY,ART,Watertown,Watertown International,P,N,"20,379","19,920",2.30%
+332,GL,MI,ESC,Escanaba,Delta County,P,N,"20,339","14,780",37.61%
+333,GL,MN,BRD,Brainerd,Brainerd Lakes Regional,P,N,"20,311","18,790",8.09%
+334,CE,KS,SLN,Salina,Salina Regional,P,N,"20,252","19,407",4.35%
+335,NM,WY,CYS,Cheyenne,"Cheyenne Regional/Jerry Olson
+Field",P,N,"19,764","4,408",348.37%
+336,NM,UT,CNY,Moab,Canyonlands Regional,P,N,"18,841","20,093",-6.23%
+337,GL,MN,STC,St. Cloud,St. Cloud Regional,P,N,"18,347","16,632",10.31%
+338,NM,MT,BTM,Butte,Bert Mooney,P,N,"18,194","16,707",8.90%
+339,NM,WY,LAR,Laramie,Laramie Regional,P,N,"17,982","16,728",7.50%
+340,SW,NM,HOB,Hobbs,Lea County Regional,P,N,"17,843","11,993",48.78%
+341,GL,WI,EAU,Eau Claire,Chippewa Valley Regional,P,N,"17,346","19,860",-12.66%
+342,NM,OR,OTH,North Bend,Southwest Oregon Regional,P,N,"17,061","13,552",25.89%
+343,AL,AK,CDV,Cordova,Merle K (Mudhole) Smith,P,N,"16,844","15,058",11.86%
+344,SO,PR,SIG,San Juan,Fernando Luis Ribas Dominicci,P,N,"16,600","16,569",0.19%
+345,NM,ID,TWF,Twin Falls,Joslin Field/Magic Valley Regional,P,N,"16,548","34,959",-52.66%
+346,GL,SD,PIR,Pierre,Pierre Regional,P,N,"16,441","17,510",-6.11%
+347,CE,IA,ALO,Waterloo,Waterloo Regional,P,N,"16,328","14,367",13.65%
+348,AL,AK,AKW,Klawock,Klawock,P,N,"16,167","14,157",14.20%
+349,WP,CA,SMX,Santa Maria,"Santa Maria Public/Capt G Allan
+Hancock Field",P,N,"15,911","27,916",-43.00%
+350,CE,IA,DBQ,Dubuque,Dubuque Regional,P,N,"15,673","18,867",-16.93%
+351,SO,KY,OWB,Owensboro,"Owensboro/Daviess County
+Regional",P,N,"15,636","13,396",16.72%
+352,SO,MS,TUP,Tupelo,Tupelo Regional,P,N,"15,590","15,748",-1.00%
+353,NE,MA,HYA,Hyannis,Cape Cod Gateway,P,N,"15,562","19,520",-20.28%
+354,NE,ME,PQI,Presque Isle,Presque Isle International,P,N,"15,428","11,137",38.53%
+355,NM,WY,RKS,Rock Springs,Southwest Wyoming Regional,P,N,"15,192","16,679",-8.92%
+356,GL,SD,ATY,Watertown,Watertown Regional,P,N,"15,042","18,419",-18.33%
+357,SO,GA,MCN,Macon,Middle Georgia Regional,P,N,"14,881","14,176",4.97%
+358,SO,KY,PAH,Paducah,Barkley Regional,P,N,"14,677","13,643",7.58%
+359,NE,RI,WST,Westerly,Westerly State,P,N,"14,435","16,925",-14.71%
+360,NE,RI,BID,Block Island,Block Island State,P,N,"14,366","16,382",-12.31%
+362,SO,MS,MEI,Meridian,Key Field,P,N,"13,999","12,050",16.17%
+364,GL,MN,HIB,Hibbing,Range Regional,P,N,"13,460","12,672",6.22%
+365,AL,AK,WRG,Wrangell,Wrangell,P,N,"13,337","12,100",10.22%
+366,EA,NY,BGM,Binghamton,"Greater Binghamton/Edwin A Link
+Field",P,N,"13,328","10,347",28.81%
+367,AL,AK,MRI,Anchorage,Merrill Field,P,N,"13,279","22,907",-42.03%
+368,SO,MS,PIB,Moselle,Hattiesburg/Laurel Regional,P,N,"13,125","13,853",-5.26%
+369,NM,CO,FNL,Loveland,Northern Colorado Regional,P,N,"13,058","5,248",148.82%
+370,GL,MI,APN,Alpena,Alpena County Regional,P,N,"13,046","12,486",4.49%
+372,SW,NM,CVN,Clovis,Clovis Regional,P,N,"13,028","7,575",71.99%
+373,NM,WY,RIW,Riverton,Central Wyoming Regional,P,N,"12,972","15,420",-15.88%
+375,CE,NE,BFF,Scottsbluff,"Western Nebraska
+Regional/William B Heilig Field",P,N,"12,548","13,310",-5.73%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+376,NE,MA,BED,Bedford,Laurence G Hanscom Field,P,N,"12,502","9,572",30.61%
+379,CE,NE,LBF,North Platte,"North Platte Regional/Lee Bird
+Field",P,N,"12,306","13,679",-10.04%
+380,GL,MN,INL,"International
+Falls",Falls International/Einarson Field,P,N,"12,260","8,277",48.12%
+381,NM,UT,CDC,Cedar City,Cedar City Regional,P,N,"12,245","12,807",-4.39%
+382,AL,AK,YAK,Yakutat,Yakutat,P,N,"12,139","10,899",11.38%
+383,NM,UT,OGD,Ogden,Ogden-Hinckley,P,N,"12,024","29,857",-59.73%
+384,NM,ID,PIH,Arbon Valley,Pocatello Regional,P,N,"11,961","23,818",-49.78%
+385,NM,CO,TEX,Telluride,Telluride Regional,P,N,"11,650","6,691",74.11%
+386,WP,MP,GRO,Northern Islands (Municipality),Benjamin Taisacan Manglona International,P,N,"11,307","9,094",24.33%
+387,GL,ND,JMS,Jamestown,Jamestown Regional,P,N,"11,299","12,804",-11.75%
+388,GL,MI,MKG,Muskegon,Muskegon County,P,N,"11,292","12,741",-11.37%
+390,NM,UT,VEL,Vernal,Vernal Regional,P,N,"11,071","9,168",20.76%
+391,NM,WA,FHR,Friday Harbor,Friday Harbor,P,N,"10,883","14,054",-22.56%
+393,WP,CA,BIH,Bishop,Bishop,P,N,"10,754","1,188",805.22%
+395,SO,MS,GLH,Greenville,Greenville Mid-Delta,P,N,"10,452","5,608",86.38%
+396,EA,VA,SHD,Weyers Cave,Shenandoah Valley Regional,P,N,"10,400","14,320",-27.37%
+397,GL,IL,MWA,Marion,Veterans Airport of Southern Illinois,P,N,"10,399","10,522",-1.17%
+398,AL,AK,GAL,Galena,Edward G Pitka Sr,P,N,"10,381","7,978",30.12%
+399,AL,AK,GST,Gustavus,Gustavus,P,N,"10,179","10,305",-1.22%
+401,WP,CA,SBD,San Bernardino,San Bernardino International,P,N,"10,142",906,1019.43%
+402,CE,KS,HYS,Hays,Hays Regional,P,N,"10,089","11,081",-8.95%
+403,EA,WV,LWB,Lewisburg,Greenbrier Valley,P,N,"10,048","10,902",-7.83%
+,,,252,Nonhub Count,,,,,,
+405,NM,CO,ALS,Alamosa,"San Luis Valley Regional/Bergman
+Field",CS,None,"9,929","11,987",-17.17%
+406,SO,FL,FXE,Fort Lauderdale,Fort Lauderdale Exec,CS,None,"9,902","8,897",11.30%
+407,GL,IL,DEC,Decatur,Decatur,CS,None,"9,871","9,001",9.67%
+408,NE,NH,LEB,Lebanon,Lebanon Municipal,CS,None,"9,855","7,597",29.72%
+412,WP,CA,IPL,Imperial,Imperial County,CS,None,"9,180","5,181",77.19%
+413,AL,AK,ENM,Emmonak,Emmonak,CS,None,"8,971","5,995",49.64%
+414,CE,MO,CGI,Cape Girardeau,Cape Girardeau Regional,CS,None,"8,713","9,244",-5.74%
+415,GL,MN,TVF,Thief River Falls,Thief River Falls Regional,CS,None,"8,648","7,423",16.50%
+416,WP,NV,EKO,Elko,Elko Regional,CS,None,"8,459","15,641",-45.92%
+417,NE,ME,BHB,Bar Harbor,Hancock County/Bar Harbor,CS,None,"8,396","8,874",-5.39%
+419,WP,CA,CEC,Crescent City,Jack McNamara Field,CS,None,"8,218","7,743",6.13%
+421,AL,AK,UNK,Unalakleet,Unalakleet,CS,None,"8,137","6,594",23.40%
+423,CE,KS,LBL,Liberal,Liberal Mid-America Regional,CS,None,"8,019","6,653",20.53%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+424,CE,MO,TBN,Fort Leonard Wood (U.S. Army),Waynesville-St Robert Regional Forney Field,CS,None,"7,988","11,340",-29.56%
+425,NM,CO,PUB,Pueblo,Pueblo Memorial,CS,None,"7,984","9,624",-17.04%
+426,EA,NY,OGS,Ogdensburg,Ogdensburg International,CS,None,"7,841","10,309",-23.94%
+428,EA,PA,JST,Johnstown,"John Murtha Johnstown/Cambria
+County",CS,None,"7,764","8,519",-8.86%
+430,SW,TX,VCT,Victoria,Victoria Regional,CS,None,"7,505","6,610",13.54%
+431,NE,MA,PVC,Provincetown,Provincetown Municipal,CS,None,"7,417","7,707",-3.76%
+432,NM,WA,ORS,Eastsound,Orcas Island,CS,None,"7,365","10,138",-27.35%
+433,GL,ND,DVL,Devils Lake,Devils Lake Regional,CS,None,"7,349","6,799",8.09%
+434,NM,MT,WYS,"West
+Yellowstone",Yellowstone,CS,None,"7,346","13,149",-44.13%
+435,EA,WV,BKW,Beckley,Raleigh County Memorial,CS,None,"7,297","4,863",50.05%
+436,EA,WV,MGW,Morgantown,"Morgantown Municipal/Walter L Bill
+Hart Field",CS,None,"7,272","6,450",12.74%
+437,AL,AK,HNS,Haines,Haines,CS,None,"7,253","7,206",0.65%
+439,NE,ME,RKD,Rockland,Knox County Regional,CS,None,"7,161","12,149",-41.06%
+440,SO,PR,MAZ,Mayaguez,Eugenio Maria De Hostos,CS,None,"7,059","6,294",12.15%
+441,SO,AL,MSL,Muscle Shoals,Northwest Alabama Regional,CS,None,"7,049","6,614",6.58%
+442,GL,MI,IWD,Ironwood,Gogebic/Iron County,CS,None,"7,027","4,763",47.53%
+443,NM,CO,CEZ,Cortez,Cortez Municipal,CS,None,"6,998","6,195",12.96%
+444,SW,NM,SKX,Taos,Taos Regional,CS,None,"6,891","2,305",198.96%
+445,SW,NM,SVC,Silver City,Grant County,CS,None,"6,550","4,921",33.10%
+446,NM,MT,SDY,Sidney,Sidney-Richland Regional,CS,None,"6,535","8,356",-21.79%
+447,CE,IA,MCW,Clear Lake,Mason City Municipal,CS,None,"6,504","7,741",-15.98%
+448,CE,KS,DDC,Dodge City,Dodge City Regional,CS,None,"6,464","8,246",-21.61%
+450,WP,HI,LUP,Kalaupapa,Kalaupapa,CS,None,"6,362","2,193",190.10%
+451,EA,PA,LNS,Lititz,Lancaster,CS,None,"6,274","4,072",54.08%
+453,CE,MO,BBG,Branson,Branson,CS,None,"6,204","10,326",-39.92%
+454,EA,PA,DUJ,Brookville,Dubois Regional,CS,None,"6,200","4,561",35.94%
+455,AL,AK,HNH,Hoonah,Hoonah,CS,None,"5,950","5,575",6.73%
+456,NE,ME,AUG,Augusta,Augusta State,CS,None,"5,804","3,836",51.30%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+457,SW,AR,HRO,Harrison,Boone County,CS,None,"5,780","4,761",21.40%
+458,NM,WA,W33,Friday Harbor,Friday Harbor,CS,None,"5,562","8,504",-34.60%
+459,AL,AK,VDZ,Valdez,Valdez Pioneer Field,CS,None,"5,551","5,195",6.85%
+460,NE,VT,RUT,Rutland,"Rutland/Southern Vermont
+Regional",CS,None,"5,540","4,531",22.27%
+461,CE,IA,FOD,Fort Dodge,Fort Dodge Regional,CS,None,"5,531","7,199",-23.17%
+462,SW,NM,CNM,Carlsbad,Cavern City Air Terminal,CS,None,"5,311","4,571",16.19%
+463,AL,AK,SGY,Skagway,Skagway,CS,None,"5,293","3,082",71.74%
+465,AL,AK,CXF,Coldfoot,Coldfoot,CS,None,"5,212","3,546",46.98%
+466,GL,MI,MBL,Manistee,Manistee County/Blacker,CS,None,"5,210","5,108",2.00%
+467,EA,NY,SLK,Saranac Lake,Adirondack Regional,CS,None,"5,181","3,956",30.97%
+468,NM,OR,PDT,Pendleton,"Eastern Oregon Regional at
+Pendleton",CS,None,"5,079","4,258",19.28%
+469,EA,WV,PKB,Parkersburg,Mid-Ohio Valley Regional,CS,None,"5,032","5,887",-14.52%
+470,EA,DE,ILG,Wilmington,New Castle,CS,None,"5,006","12,476",-59.87%
+471,WP,CA,HHR,Hawthorne,"Jack Northrop Field/Hawthorne
+Municipal",CS,None,"5,001","3,483",43.58%
+472,AL,AK,AQH,Quinhagak,Quinhagak,CS,None,"4,992","3,890",28.33%
+473,SW,AR,HOT,Hot Springs,Memorial Field,CS,None,"4,975","4,388",13.38%
+474,AL,AK,ANI,Aniak,Aniak,CS,None,"4,906","3,935",24.68%
+475,AL,AK,VAK,Chevak,Chevak,CS,None,"4,806","3,489",37.75%
+476,SO,FL,DTS,Destin,Destin Exec,CS,None,"4,801","1,765",172.01%
+477,GL,IL,UIN,Quincy,Quincy Regional-Baldwin Field,CS,None,"4,774","7,418",-35.64%
+478,AL,AK,FYU,Fort Yukon,Fort Yukon,CS,None,"4,728","4,163",13.57%
+479,EA,NY,MSS,Massena,"Massena International-Richards
+Field",CS,None,"4,721","3,662",28.92%
+480,AL,AK,HPB,Hooper Bay,Hooper Bay,CS,None,"4,695","2,903",61.73%
+481,AL,AK,KSM,Saint Mary's,St Mary's,CS,None,"4,680","2,982",56.94%
+482,CE,MO,IRK,Kirksville,Kirksville Regional,CS,None,"4,667","4,099",13.86%
+483,WP,AZ,SOW,Show Low,Show Low Regional,CS,None,"4,535","4,570",-0.77%
+484,EA,PA,BFD,Bradford,Bradford Regional,CS,None,"4,509","3,361",34.16%
+485,EA,PA,AOO,Altoona,Altoona/Blair County,CS,None,"4,442","4,278",3.83%
+487,WP,HI,MUE,Kamuela,Waimea-Kohala,CS,None,"4,352","3,298",31.96%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+489,NM,MT,GDV,Glendive,Dawson Community,CS,None,"4,313","2,126",102.87%
+491,AL,AK,IIK,Kipnuk,Kipnuk,CS,None,"4,220","2,600",62.31%
+493,CE,NE,AIA,Alliance,Alliance Municipal,CS,None,"4,156","3,543",17.30%
+494,WP,CA,MMH,"Mammoth
+Lakes",Mammoth Yosemite,CS,None,"4,056",462,777.92%
+495,SW,AR,ELD,El Dorado,"South Arkansas Regional at
+Goodwin Field",CS,None,"3,923","3,078",27.45%
+496,SW,AR,JBR,Jonesboro,Jonesboro Municipal,CS,None,"3,812","4,041",-5.67%
+497,AL,AK,SOV,Seldovia,Seldovia,CS,None,"3,738","3,469",7.75%
+498,WP,CA,CRQ,Carlsbad,McClellan-Palomar,CS,None,"3,715","1,313",182.94%
+499,CE,NE,CDR,Chadron,Chadron Municipal,CS,None,"3,641","2,891",25.94%
+500,CE,IA,BRL,Burlington,Southeast Iowa Regional,CS,None,"3,605","3,547",1.64%
+502,AL,AK,PHO,Point Hope,Point Hope,CS,None,"3,572","2,844",25.60%
+503,AL,AK,SHH,Shishmaref,Shishmaref,CS,None,"3,552","2,822",25.87%
+504,AL,AK,SCM,Scammon Bay,Scammon Bay,CS,None,"3,546","2,451",44.68%
+505,AL,AK,WLK,Selawik,Selawik,CS,None,"3,522","2,806",25.52%
+506,AL,AK,KAE,Kake,Kake,CS,None,"3,431",0,0.00%
+507,WP,CA,MCE,Merced,Merced Yosemite Regional,CS,None,"3,431","5,301",-35.28%
+508,AL,AK,WTK,Noatak,Noatak,CS,None,"3,402","2,506",35.75%
+509,SO,TN,MKL,Jackson,McKellar-Sipes Regional,CS,None,"3,398","2,739",24.06%
+510,AL,AK,BVK,Buckland,Buckland,CS,None,"3,362","2,625",28.08%
+511,AL,AK,OOK,Toksook Bay,Toksook Bay,CS,None,"3,279","2,001",63.87%
+512,AL,AK,CDB,Cold Bay,Cold Bay,CS,None,"3,240","3,814",-15.05%
+513,NM,MT,OLF,Wolf Point,L M Clayton,CS,None,"3,207","3,601",-10.94%
+514,AL,AK,Z09,Kasigluk,Kasigluk,CS,None,"3,182","2,171",46.57%
+516,AL,AK,D76,Noorvik,Robert /Bob/ Curtis Memorial,CS,None,"3,096","2,386",29.76%
+517,AL,AK,SVA,Savoonga,Savoonga,CS,None,"3,085","2,121",45.45%
+518,NM,MT,GGW,Glasgow,"Wokal Field/Glasgow-Valley
+County",CS,None,"2,982","3,388",-11.98%
+519,WP,CA,SQL,San Carlos,San Carlos,CS,None,"2,957","4,257",-30.54%
+520,NM,WA,S31,Lopez,Lopez Island,CS,None,"2,937",868,238.36%
+521,AL,AK,KVL,Kivalina,Kivalina,CS,None,"2,896","2,185",32.54%
+Rank,RO,ST,Locid,City,Airport Name,S/L,Hub,"CY 22
+Enplanement s","CY 21
+Enplanement s",% Change
+522,AL,AK,2A3,Larsen Bay,Larsen Bay,CS,None,"2,895","2,366",22.36%
+523,AL,AK,CFK,Chefornak,Chefornak,CS,None,"2,887","1,672",72.67%
+524,NM,MT,HVR,Havre,Havre City-County,CS,None,"2,863","3,395",-15.67%
+525,AL,AK,AWI,Wainwright,Wainwright,CS,None,"2,860","2,356",21.39%
+526,AL,AK,HLA,Huslia,Huslia,CS,None,"2,849","2,020",41.04%
+528,AL,AK,GAM,Gambell,Gambell,CS,None,"2,842","1,963",44.78%
+530,AL,AK,A61,Tuntutuliak,Tuntutuliak,CS,None,"2,788","1,942",43.56%
+531,AL,AK,0AK,Pilot Station,Pilot Station,CS,None,"2,716","1,843",47.37%
+533,AL,AK,DUY,Kongiganak,Kongiganak,CS,None,"2,679","1,901",40.93%
+534,AL,AK,MCG,McGrath,McGrath,CS,None,"2,674","2,228",20.02%
+536,AL,AK,ADK,Adak (Naval) Station/Mitchell Field,Adak,CS,None,"2,616","2,205",18.64%
+537,AL,AK,EEK,Eek,Eek,CS,None,"2,612","1,429",82.79%
+538,AL,AK,AKP,Anaktuvuk Pass,Anaktuvuk Pass,CS,None,"2,597","2,321",11.89%
+539,WP,HI,HNM,Hana,Hana,CS,None,"2,562","2,315",10.67%
+,,,113,"Nonprimary
+Commercial Service",,,,,,
+,,,389,"Total
+Commercial Service",,,,,,
