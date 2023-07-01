@@ -12,7 +12,18 @@ const Globe = () => {
     center: [-90, 40]
   });
   map.on('style.load', () => {
-    map.setFog({}); // Set the default atmosphere style
+    map.setFog({
+      "range":[0.5,10],
+      color: "hsl(0, 0%, 100%)",
+      "high-color": ["interpolate",["exponential",1.2],["zoom"],0,"hsl(207, 100%, 50%)",8,"hsl(38, 63%, 84%)"],
+      "space-color": ["interpolate",["exponential",1.2],["zoom"],5.5,"hsl(240, 46%, 11%)",6,"hsl(199, 61%, 87%)"],
+      "horizon-blend": ["interpolate",["exponential",1.2],["zoom"],5.5,0.05,6,0.1],
+      "star-intensity":["interpolate",["exponential",1.2],["zoom"],5.5,0.1,6,0],
+    }); // Set the default atmosphere style
+    // set the colour of the map to be white
+    map.setPaintProperty({
+      "background-color": ["interpolate",["linear"],["zoom"],11,"hsl(35, 32%, 91%)",13,"hsl(35, 12%, 89%)"]
+    });
   });
 
   // The following values can be changed to control rotation speed:
@@ -76,23 +87,10 @@ const Globe = () => {
       spinGlobe();
   });
 
-//   document.getElementById('btn-spin').addEventListener('click', (e) => {
-//       spinEnabled = !spinEnabled;
-//       if (spinEnabled) {
-//           spinGlobe();
-//           e.target.innerHTML = 'Pause rotation';
-//       } else {
-//           map.stop(); // Immediately end ongoing animation
-//           e.target.innerHTML = 'Start rotation';
-//       }
-//   });
-
   spinGlobe();
 
   return (
     <>
-        <div id="map"></div>
-        <button id="btn-spin">Pause rotation</button>
     </>
   )
 }
