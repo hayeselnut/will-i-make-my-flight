@@ -1,4 +1,4 @@
-import React  from "react";
+import React, { useState }  from "react";
 import {
   Card,
   Container,
@@ -78,7 +78,6 @@ const Root = () => {
 
   return (
     <>
-      {/* <Globe /> */}
       <Container>
         <Center>
           <Link to="/">
