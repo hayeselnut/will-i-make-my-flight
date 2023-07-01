@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+data/all_data.csv
+../.DS_Store
+.venv/
 
 # C extensions
 *.so

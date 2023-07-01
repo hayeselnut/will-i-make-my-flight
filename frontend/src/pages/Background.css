@@ -5,13 +5,22 @@ html, body, .container{
   padding: 0;
   overflow: hidden;
 }
-.container{
-  background-color: #007ced;
-	background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%);
+
+#lightblue {
+  background-color: var(--chakra-colors-blue-100);
+  height: 100vh;
+}
+
+#sky{
+  background-color: var(--chakra-colors-blue-100);
+  height: 100vh;
+  /* background-color: #007ced;
+	background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%); */
 }
 #cloud-intro{
   position: relative;
-  height: 100%;
+  /* width: 100%; */
+  height: 100vh;
   background-image: url('../clouds.png');
   background-image: url('../clouds.png') 400px 500px;
 /*               url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px; */
