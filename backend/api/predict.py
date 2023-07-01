@@ -1,5 +1,6 @@
 from helpers import DEFAULT_TS_FMT, month_from_timestamp
 import json
+from datetime import datetime
 
 def predict_bag_check(airport, airline, arrival_time):
     month = month_from_timestamp(arrival_time, DEFAULT_TS_FMT)
@@ -10,10 +11,19 @@ def predict_bag_check(airport, airline, arrival_time):
     }
 
 def predict_security(airport, arrival_time):
-    month = month_from_timestamp(arrival_time, DEFAULT_TS_FMT)
+    with open("data/security-times.json", "r") as f:
+        times = json.load(f)
+    
+    time_obj = datetime.strptime(arrival_time, DEFAULT_TS_FMT)
+    time_lookup = time_obj.strftime("%H00")
+    
+    try:
+        wait_time = max(1, int(times[airport][time_lookup]))
+    except:
+        wait_time = 40
 
     return {
-        "time": 40,
+        "time": wait_time,
         "confidence": 80
     }
 
