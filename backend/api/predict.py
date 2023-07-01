@@ -2,7 +2,7 @@ from helpers import DEFAULT_TS_FMT, month_from_timestamp
 import json
 from datetime import datetime, timedelta
 from models.flight_delays_agg import predict_delay
-from numpy import np
+import numpy as np
 
 def predict_bag_check(airport, airline, arrival_time):
     month = month_from_timestamp(arrival_time, DEFAULT_TS_FMT)
