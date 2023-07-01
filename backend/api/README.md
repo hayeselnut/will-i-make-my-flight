@@ -38,3 +38,17 @@ Run start script
 ```
 ./start-dev.sh
 ```
+
+## Adding dependencies
+
+Install a new package
+
+```
+pip install <package>
+```
+
+Update requirements
+
+```
+pip freeze > requirements.txt
+```
