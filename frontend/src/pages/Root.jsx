@@ -16,7 +16,7 @@ const Root = () => {
     container: 'map',
     style: 'mapbox://styles/calebrealsmurf/cljkaomqn001r01rdawnn0bwu',
     projection: 'globe', // Display the map as a globe, since satellite-v9 defaults to Mercator
-    zoom: 0.7,
+    zoom: 3,
     center: [-90, 40]
   });
 
@@ -82,10 +82,10 @@ const Root = () => {
       <Container className="scrollable" style={{height: "100vh", overflow: "scroll"}}>
         <Center>
           <Link to="/">
-            <FadeIn>
-              <Heading position="relative" color="white" size={"4xl"} marginTop="8vh">
-                Will I Make My Flight?
-              </Heading>
+            <FadeIn transitionDuration={5000}>
+            <Heading position="relative" color="white" size={"4xl"} marginTop="8vh" textAlign="center">
+              Will I Make My Flight?
+            </Heading>
             </FadeIn>
           </Link>
         </Center>
