@@ -9,11 +9,11 @@ import {
   FormLabel,
   HStack,
   Checkbox,
+  Text,
+  Button,
 } from "@chakra-ui/react";
-import { Text } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
 import "./Background.css";
-import "./Home.css";
+import Globe from '../components/Globe'
 
 const Home = () => {
   const [flightNumber, setFlightNumber] = React.useState("");
@@ -76,9 +76,10 @@ const Home = () => {
 
   return (
     <>
-    <div id="lightblue">
+    <Globe/>
+    {/* <div id="lightblue"> */}
       {/* <div id="cloud-intro"> */}
-      <Container>
+      {/* <Container> */}
         <Center>
           <Heading size={"4xl"} marginTop="15vh">Will I Make My Flight?</Heading>
         </Center>
@@ -146,8 +147,8 @@ const Home = () => {
           </Center>
           </FormControl>
         </Card>
-      </Container>
-      </div>
+      {/* </Container> */}
+      {/* </div> */}
     {/* </div> */}
     </>
   );
