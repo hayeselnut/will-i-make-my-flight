@@ -11,6 +11,7 @@ import {
 import { JourneyTimeline } from "../components";
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "./Background.css";
 
 const dummyData = {
   percent_chance: 50,
@@ -53,7 +54,6 @@ const Search = () => {
         },
       };
 
-      console.log("HERE");
       const response = await fetch(
         // TODO: endpoint
         "http://localhost:3000/listings/new",
@@ -62,7 +62,6 @@ const Search = () => {
 
       try {
         const json = await response.json();
-        console.log("JSON", json);
 
         if (json.error) {
           console.error(json.error);
@@ -86,8 +85,9 @@ const Search = () => {
   }, [searchParams]);
 
   return (
-    <Container>
-      <Card marginTop="40vh" marginBottom="5vh">
+    <div id="lightblue" paddingBottom="5vh">
+    <Container paddingTop="40vh">
+      <Card>
         <CardBody>
           {loaded ? (
             <VStack>
@@ -113,6 +113,7 @@ const Search = () => {
         </CardBody>
       </Card>
     </Container>
+    </div>
   );
 };
 
