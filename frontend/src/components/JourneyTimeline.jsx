@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import FadeIn from "react-fade-in";
+import moment from "moment";
 
 const BAG_CHECK_MED = 30;
 const BAG_CHECK_SEV = 50;
@@ -243,9 +244,9 @@ const JourneyTimeline = ({
                   style={
                     predictedTime < 0
                       ? {
-                          fontWeight: "bold",
-                          color: "var(--chakra-colors-red-500)",
-                        }
+                        fontWeight: "bold",
+                        color: "var(--chakra-colors-red-500)",
+                      }
                       : {}
                   }
                 >

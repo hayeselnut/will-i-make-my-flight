@@ -22,7 +22,7 @@ const Home = () => {
   const [day, setDay] = useState("");
   const [minutes, setMinutes] = useState("");
   const [hours, setHours] = useState("");
-  const [luggage, setLuggage] = useState(true);
+  const [bagCheck, setBagCheck] = useState(true);
   const navigate = useNavigate();
 
   const checkFields = () => {
@@ -44,17 +44,12 @@ const Home = () => {
     }
 
     const momentDay = moment(day);
+    const date = new Date(momentDay.year(), momentDay.month(), momentDay.date(), hours, minutes)
 
     const data = {
       flightNumber,
-      arrivalTime: new Date(
-        momentDay.year(),
-        momentDay.month(),
-        momentDay.date(),
-        hours,
-        minutes
-      ),
-      luggage,
+      arrivalTime: `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}T${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
+      bagCheck,
     };
 
     navigate(`/search?${createSearchParams(data).toString()}`);
@@ -99,8 +94,8 @@ const Home = () => {
       </HStack>
       <HStack marginTop={10}>
         <Checkbox
-          onChange={(event) => setLuggage(event.target.checked)}
-          value={luggage}
+          onChange={(event) => setBagCheck(event.target.checked)}
+          value={bagCheck}
           defaultChecked
         >
           I am checking in luggage.
