@@ -81,12 +81,16 @@ const Root = () => {
       <Container className="scrollable" style={{height: "100vh", overflow: "scroll"}}>
         <Center>
           <Link to="/">
-            <Heading position="relative" color="white" size={"4xl"} marginTop="10vh">
+            <Heading position="relative" color="white" size={"4xl"} marginTop="8vh">
               Will I Make My Flight?
             </Heading>
           </Link>
         </Center>
-        <Card padding={10} marginTop={"15vh"} minHeight={"450px"}>
+        <Card padding={10} marginTop={"10vh"} minHeight={"430px"}
+        style={{
+          "background-color": "rgba(255, 255, 255, 0.9)",
+          "backdrop-filter": "blur(5px)",
+        }}>
           <Outlet context={flyTo}/>
         </Card>
       </Container>
