@@ -80,7 +80,7 @@ const Home = () => {
     {/* <div id="lightblue"> */}
       {/* <div id="cloud-intro"> */}
       {/* <Container> */}
-        <Center>
+        {/* <Center>
           <Heading size={"4xl"} marginTop="15vh">Will I Make My Flight?</Heading>
         </Center>
         <Card padding={10} marginTop={"15vh"}>
@@ -146,7 +146,7 @@ const Home = () => {
             </Button>
           </Center>
           </FormControl>
-        </Card>
+        </Card> */}
       {/* </Container> */}
       {/* </div> */}
     {/* </div> */}
