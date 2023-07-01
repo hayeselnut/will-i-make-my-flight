@@ -33,6 +33,7 @@ def fetch_flight_details(flight_num, arrival_time):
         if "response" in body:
             details = body["response"]
             airport = details["dep_iata"]
+            gate = details["dep_gate"]
             dep_time = details["dep_time"]
 
             dep_time_object = datetime.strptime(dep_time, AIRLABS_TS_FMT)
@@ -42,8 +43,10 @@ def fetch_flight_details(flight_num, arrival_time):
     except:
         airport = "LAX"
         dep_time = "2023-07-01T12:07:37Z"
+        gate = "29"
 
     return {
         "airport": airport,
+        "gate": gate,
         "scheduled_departure_time": dep_time
     }
