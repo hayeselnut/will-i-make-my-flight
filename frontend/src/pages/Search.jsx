@@ -85,7 +85,7 @@ const Search = () => {
   }, [searchParams]);
 
   return (
-    <div id="lightblue" paddingBottom="5vh">
+    <div id="lightblue">
     <Container paddingTop="40vh">
       <Card>
         <CardBody>
