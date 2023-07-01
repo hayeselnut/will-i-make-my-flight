@@ -78,7 +78,7 @@ const Root = () => {
 
   return (
     <>
-      <Container>
+      <Container className="scrollable" style={{height: "100vh", overflow: "scroll"}}>
         <Center>
           <Link to="/">
             <Heading position="relative" color="white" size={"4xl"} marginTop="10vh">
