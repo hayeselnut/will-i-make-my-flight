@@ -7,6 +7,7 @@ import {
 } from "@chakra-ui/react";
 import { Link, Outlet} from "react-router-dom";
 import mapboxgl from 'mapbox-gl';
+import FadeIn from "react-fade-in";
 import "./Background.css";
 
 const Root = () => {
@@ -81,9 +82,11 @@ const Root = () => {
       <Container className="scrollable" style={{height: "100vh", overflow: "scroll"}}>
         <Center>
           <Link to="/">
-            <Heading position="relative" color="white" size={"4xl"} marginTop="8vh">
-              Will I Make My Flight?
-            </Heading>
+            <FadeIn>
+              <Heading position="relative" color="white" size={"4xl"} marginTop="8vh">
+                Will I Make My Flight?
+              </Heading>
+            </FadeIn>
           </Link>
         </Center>
         <Card padding={10} marginTop={"10vh"} minHeight={"430px"}
