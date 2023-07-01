@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import mapboxgl from 'mapbox-gl';
 import "./Globe.css";
 
@@ -34,7 +34,7 @@ const Globe = () => {
   let userInteracting = false;
   let spinEnabled = true;
 
-  function spinGlobe() {
+  const spinGlobe = () => {
     const zoom = map.getZoom();
     if (spinEnabled && !userInteracting && zoom < maxSpinZoom) {
         let distancePerSecond = 360 / secondsPerRevolution;
@@ -54,7 +54,7 @@ const Globe = () => {
 
   // When animation is complete, start spinning if there is no ongoing interaction
   map.on('moveend', () => {
-      spinGlobe();
+    spinGlobe();
   });
 
   spinGlobe();
@@ -67,13 +67,9 @@ const Globe = () => {
           center: [(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100],
           essential: true, // this animation is considered essential with respect to prefers-reduced-motion
           zoom: 3,
-        }, {duration: 3000});
-
-        setTimeout(async () => {
-          map.stop();
-          console.log("STOP")
-        }, 3000);
-        }
+        })
+        userInteracting = true;
+      }
        }
     >Fly</button>
     </>
