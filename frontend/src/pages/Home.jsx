@@ -22,7 +22,7 @@ const Home = () => {
   const [year, setYear] = React.useState("");
   const [minutes, setMinutes] = React.useState("");
   const [hours, setHours] = React.useState("");
-  const [luggage] = React.useState(true);
+  const [luggage, setLuggage] = React.useState(true);
 
   const navigate = useNavigate();
 
@@ -82,79 +82,84 @@ const Home = () => {
 
   return (
     <>
-    <div id="lightblue">
-      {/* <div id="cloud-intro"> */}
-      <Container>
-        <Center>
-          <Heading size={"4xl"} marginTop="15vh">Will I Make My Flight?</Heading>
-        </Center>
-        <Card padding={10} marginTop={"15vh"}>
-          <FormControl>
-            <FormLabel>Enter your flight number below</FormLabel>
-            <Input
-              type="text"
-              value={flightNumber}
-              onChange={(event) => setFlightNumber(event.target.value)}
-              placeholder="Flight number"
-            />
-
-            <FormLabel marginTop={10}>When are you arriving at the airport?</FormLabel>
-<HStack justifyContent={"center"}>
-              <Input
-                type="text"
-                placeholder="dd"
-                onChange={(event) => setDay(event.target.value)}
-                style={{width: "80px"}}
-              />
-              <Text>/</Text>
-              <Input
-                type="text"
-                placeholder="mm"
-                onChange={(event) => setMonth(event.target.value)}
-                style={{width: "80px"}}
-              />
-              <Text>/</Text>
-              <Input
-                type="text"
-                placeholder="yyyy"
-                onChange={(event) => setYear(event.target.value)}
-                style={{width: "80px"}}
-              />
-            </HStack>
-
-<HStack justifyContent={"center"}>
-<Input
-                type="text"
-                placeholder="hh"
-                onChange={(event) => setHours(event.target.value)}
-                style={{width: "80px"}}
-
-              />
-              <Text>:</Text>
-              <Input
-                type="text"
-                placeholder="mm"
-                onChange={(event) => setMinutes(event.target.value)}
-                style={{width: "80px"}}
-              />
-</HStack>
-            <HStack marginTop={10}>
-            <Checkbox defaultChecked value={luggage} >
-              I am checking in luggage.
-            </Checkbox>
-            </HStack>
-
+      <div id="lightblue">
+        <Container>
           <Center>
-
-            <Button marginTop={10} colorScheme="blue" onClick={searchFlight} type="submit">
-              Search
-            </Button>
+            <Heading size={"4xl"} marginTop="15vh">
+              Will I Make My Flight?
+            </Heading>
           </Center>
-          </FormControl>
-        </Card>
-      </Container>
+          <Card padding={10} marginTop={"15vh"}>
+            <FormControl>
+              <FormLabel>Enter your flight number below</FormLabel>
+              <Input
+                type="text"
+                value={flightNumber}
+                onChange={(event) => setFlightNumber(event.target.value)}
+                placeholder="Flight number"
+              />
+
+              <FormLabel marginTop={10}>
+                When are you arriving at the airport?
+              </FormLabel>
+              <HStack justifyContent={"center"}>
+                <Input
+                  type="text"
+                  placeholder="dd"
+                  onChange={(event) => setDay(event.target.value)}
+                  style={{ width: "80px" }}
+                />
+                <Text>/</Text>
+                <Input
+                  type="text"
+                  placeholder="mm"
+                  onChange={(event) => setMonth(event.target.value)}
+                  style={{ width: "80px" }}
+                />
+                <Text>/</Text>
+                <Input
+                  type="text"
+                  placeholder="yyyy"
+                  onChange={(event) => setYear(event.target.value)}
+                  style={{ width: "80px" }}
+                />
+              </HStack>
+
+              <HStack justifyContent={"center"}>
+                <Input
+                  type="text"
+                  placeholder="hh"
+                  onChange={(event) => setHours(event.target.value)}
+                  style={{ width: "80px" }}
+                />
+                <Text>:</Text>
+                <Input
+                  type="text"
+                  placeholder="mm"
+                  onChange={(event) => setMinutes(event.target.value)}
+                  style={{ width: "80px" }}
+                />
+              </HStack>
+              <HStack marginTop={10}>
+                <Checkbox onChange={(event) => setLuggage(event.target.checked)} value={luggage}>
+                  I am checking in luggage.
+                </Checkbox>
+              </HStack>
+
+              <Center>
+                <Button
+                  marginTop={10}
+                  colorScheme="blue"
+                  onClick={searchFlight}
+                  type="submit"
+                >
+                  Search
+                </Button>
+              </Center>
+            </FormControl>
+          </Card>
+        </Container>
       </div>
-    {/* </div> */}
     </>
   );
 };
