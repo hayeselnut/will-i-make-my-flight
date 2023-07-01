@@ -1,9 +1,6 @@
 import {
-  Container,
   VStack,
   Text,
-  Card,
-  CardBody,
   Divider,
   Spinner,
   Center,
@@ -16,7 +13,7 @@ import "./Background.css";
 const dummyData = {
   percent_chance: 50,
   departure_airport: "LAX", // AIRPORT CODE
-  departure_time_scheduled: "2023-07-01T10:30:37Z", // UTC
+  departure_time_scheduled: "2023-07-01T08:30:37Z", // UTC
   arrival_airport: "2023-07-01T09:07:37Z", // UTC
   predicted_bag_check: 20, // FIXED amount of time for bag check in
   predicted_security: 30, // in minutes
@@ -84,36 +81,26 @@ const Search = () => {
     };
   }, [searchParams]);
 
-  return (
-    <div id="lightblue">
-    <Container paddingTop="40vh">
-      <Card>
-        <CardBody>
-          {loaded ? (
-            <VStack>
-              <Text
-                color={colorStyle(likelihood.percent_chance)}
-                fontWeight={"bold"}
-                fontSize="6xl"
-              >
-                {likelihood.percent_chance}%
-              </Text>
-              <Text>is the chance you will make your flight</Text>
+  return loaded ? (
+    <VStack>
+      <Text
+        color={colorStyle(likelihood.percent_chance)}
+        fontWeight={"bold"}
+        fontSize="6xl"
+      >
+        {likelihood.percent_chance}%
+      </Text>
+      <Text>is the chance you will make your flight</Text>
 
-              <Divider marginTop="50px" marginBottom="50px" />
+      <Divider marginTop="50px" marginBottom="50px" />
 
-              <Text marginBottom="30px">Predicted timeline:</Text>
-              <JourneyTimeline likelihood={likelihood} />
-            </VStack>
-          ) : (
-            <Center>
-              <Spinner size="xl" />
-            </Center>
-          )}
-        </CardBody>
-      </Card>
-    </Container>
-    </div>
+      <Text marginBottom="30px">Predicted timeline:</Text>
+      <JourneyTimeline likelihood={likelihood} />
+    </VStack>
+  ) : (
+    <Center height="350px">
+      <Spinner size="xl" />
+    </Center>
   );
 };
 
