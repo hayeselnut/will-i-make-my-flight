@@ -8,10 +8,10 @@ import {
   HStack,
   Select,
   Checkbox,
+  Text,
+  Button,
 } from "@chakra-ui/react";
 import { createSearchParams, useNavigate } from "react-router-dom";
-import { Text } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
 import "./Background.css";
 
 const Home = () => {
