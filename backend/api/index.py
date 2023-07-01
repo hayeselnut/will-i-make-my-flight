@@ -56,6 +56,8 @@ def get_flight_likelihood():
     return_data = {
         "arrival_time": arrival_time, # UTC
         "departure_airport": departure_airport, # AIRPORT CODE
+        "departure_long": extra_details["longitude"],
+        "departure_lat": extra_details["latitude"],
         "departure_time_scheduled": scheduled_departure_time, # UTC
         "predicted_bag_check": bag_check["time"], # in minutes
         "predicted_security": security["time"], # in minutes
