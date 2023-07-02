@@ -18,8 +18,7 @@ import {
   Stepper,
 } from "@chakra-ui/react";
 import React from "react";
-// import FadeIn from "react-fade-in";
-// import moment from "moment";
+import FadeIn from "react-fade-in";
 
 const BAG_CHECK_MED = 30;
 const BAG_CHECK_SEV = 50;
@@ -218,7 +217,7 @@ const JourneyTimeline = ({
     predicted_bag_check === -1 ? eventsWithoutBag : eventsWithBag;
 
   return (
-    // <FadeIn transitionDuration={6000}>
+    <FadeIn transitionDuration={3000}>
       <Stepper size="lg" orientation="vertical" height="600px" gap="0">
         {eventsToDisplay.map(
           (
@@ -278,6 +277,7 @@ const JourneyTimeline = ({
           )
         )}
       </Stepper>
+    </FadeIn>
   );
 };
 
