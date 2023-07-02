@@ -49,4 +49,4 @@ def predict_delay(airport, airline, flight_departure_time):
 
 
 if __name__ == "__main__":
-    print(predict_delay('JFK', 'AA', datetime(2022, 8, 22, 5, 10)))
+    print(predict_delay('LAX', 'AA', datetime(2023, 7, 1, 12, 7)))
