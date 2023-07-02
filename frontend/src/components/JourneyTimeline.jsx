@@ -220,7 +220,7 @@ const JourneyTimeline = ({
 
   return (
     <FadeIn transitionDuration={3000}>
-      <Stepper size="lg" orientation="vertical" height="600px" gap="0">
+      <Stepper size="lg" orientation="vertical" height="600px" gap="0" marginLeft="70px">
         {eventsToDisplay.map(
           (
             {
