@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React   from "react";
 import {
   Card,
   Container,
@@ -9,6 +9,9 @@ import { Link, Outlet} from "react-router-dom";
 import mapboxgl from 'mapbox-gl';
 import FadeIn from "react-fade-in";
 import "./Background.css";
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const Root = () => {
   mapboxgl.accessToken = 'pk.eyJ1IjoiY2FsZWJyZWFsc211cmYiLCJhIjoiY2xqazVzN2JyMGZnYjNwcTk4eGZmbHk0aiJ9.gCudJOG6oeYzGsuTlstEkg';
@@ -74,7 +77,6 @@ const Root = () => {
       essential: true,
       zoom: 10,
     });
-    userInteracting = true;
   }
 
   return (
@@ -82,10 +84,10 @@ const Root = () => {
       <Container className="scrollable" style={{height: "100vh", overflow: "scroll"}}>
         <Center>
           <Link to="/">
-            <FadeIn transitionDuration={5000}>
-            <Heading position="relative" color="white" size={"4xl"} marginTop="8vh" textAlign="center">
-              Will I Make My Flight?
-            </Heading>
+            <FadeIn transitionDuration={3000}>
+              <Heading position="relative" color="white" size={"4xl"} marginTop="8vh" textAlign="center">
+                Will I Make My Flight?
+              </Heading>
             </FadeIn>
           </Link>
         </Center>

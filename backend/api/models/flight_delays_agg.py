@@ -1,14 +1,16 @@
 import pandas as pd
 import numpy as np
-import datetime as dt
+from datetime import datetime, timedelta
 from sklearn import metrics, linear_model
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from os.path import relpath
+import os
 
 def predict_delay(airport, airline, flight_departure_time):
     # Load in Aggregated DF
-    agg = pd.read_csv('../data/delay_agg.csv')
-    agg = agg.loc(agg['OP_UNIQUE_CARRIER'] == airline).reset_index(drop=True)
+    agg = pd.read_csv(relpath('./models/delay_agg.csv'))
+    agg = agg.loc[agg['OP_UNIQUE_CARRIER'] == airline].reset_index(drop=True)
 
     # ------------------------- Encode ------------------------
     label_encoder = LabelEncoder()
@@ -44,8 +46,9 @@ def predict_delay(airport, airline, flight_departure_time):
         if abs(val-result[i]) > 15: icount += 1
     '{:.2f}%'.format(icount / len(result) * 100)
 
-    index = agg.loc((agg['ORIGIN'] == airport) & (agg['CRS_DEP_HOUR'] == flight_departure_time.dt.hour)).index
-    return result[index], metrics.mean_squared_error(result, Y)
+    index = agg.loc[(agg['ORIGIN'] == airport) & (agg['CRS_DEP_HOUR'] == flight_departure_time.hour)].index
+    return result[index][0][0], metrics.mean_squared_error(result, Y)
+
 
 if __name__ == "__main__":
-    print(predict_delay('AA', 'JFK', dt.time(5, 10)))
+    print(predict_delay('LAX', 'AA', datetime(2023, 7, 1, 12, 7)))

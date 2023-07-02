@@ -19,7 +19,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import FadeIn from "react-fade-in";
-import moment from "moment";
 
 const BAG_CHECK_MED = 30;
 const BAG_CHECK_SEV = 50;
@@ -218,7 +217,7 @@ const JourneyTimeline = ({
     predicted_bag_check === -1 ? eventsWithoutBag : eventsWithBag;
 
   return (
-    <FadeIn transitionDuration={6000}>
+    <FadeIn transitionDuration={3000}>
       <Stepper size="lg" orientation="vertical" height="600px" gap="0">
         {eventsToDisplay.map(
           (
@@ -234,7 +233,7 @@ const JourneyTimeline = ({
             },
             index
           ) => (
-            <Step key={index} style={{ transition: "opacity 1s ease-in" }}>
+            <Step key={index}>
               <StepIndicator style={style ?? grey}>
                 {icon && <Icon as={icon} color={iconStyle} />}
               </StepIndicator>
@@ -267,7 +266,7 @@ const JourneyTimeline = ({
                 <StepDescription>
                   {predictedTime && (
                     <Badge colorScheme={predictedTime < 0 ? "red" : badgeColor}>
-                      {predictedTime} mins
+                      {predictedTime < 0 ? `Late by ${predictedTime * -1} mins` : `${predictedTime} mins`}
                     </Badge>
                   )}
                 </StepDescription>

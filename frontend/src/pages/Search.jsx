@@ -13,12 +13,15 @@ import "./Globe.css";
 import FadeIn from "react-fade-in";
 
 const dummyData = {
+  departure_long: -118.40853, // LAX
+  departure_lat: 33.9415889, // LAX
   percent_chance: 50,
   departure_airport: "LAX", // AIRPORT CODE
-  departure_time_scheduled: "2023-07-01T08:30:37", // UTC
+  departure_time_scheduled: "2023-07-01T10:30:37", // UTC
   arrival_airport: "2023-07-01T09:07:37", // UTC
   predicted_bag_check: 20, // FIXED amount of time for bag check in
   predicted_security: 30, // in minutes
+  predicted_walk_to_gate: 15, // in minutes
   predicted_flight_delay: 60, // in minutes
 };
 
@@ -64,24 +67,28 @@ const Search = () => {
         if (json.error) {
           console.error(json.error);
           setLikelihood(dummyData);
+          flyTo([dummyData.departure_long, dummyData.departure_lat]);
           console.log("error branch");
         } else {
           setLikelihood(json);
           console.log("correct branch");
+        flyTo([json.departure_long, json.departure_lat]);
         }
       } catch (e) {
         console.error(e);
         setLikelihood(dummyData);
+        flyTo([dummyData.departure_long, dummyData.departure_lat]);
       }
 
       setLoaded(true);
-      flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
+      // console.log("FLYING OVER!");
+      // flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
     }, 1000);
 
     return () => {
       clearTimeout(timer);
     };
-  }, [searchParams]);
+  }, [searchParams, flyTo]);
 
   return loaded ? (
     <VStack>
@@ -99,11 +106,11 @@ const Search = () => {
         </FadeIn>
       <FadeIn transitionDuration={4000}>
         <Text align="center" fontSize="3xl">chance of making your flight</Text>
-      </FadeIn>
+       </FadeIn>
       <Divider marginTop="50px" marginBottom="50px" />
-        <FadeIn transitionDuration={6000}>
+         <FadeIn transitionDuration={6000}>
           <Text marginBottom="30px">Your anticipated timeline is:</Text>
-        </FadeIn>
+         </FadeIn>
       <JourneyTimeline likelihood={likelihood} />
     </VStack>
   ) : (

@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Python 3.11
+- Python 3.9
 - venv
 
 ## Set up
