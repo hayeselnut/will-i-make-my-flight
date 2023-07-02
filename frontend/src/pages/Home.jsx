@@ -79,9 +79,6 @@ const Home = () => {
           <option value={tomorrow.format("LL")}>
             {tomorrow.format("LL")}
           </option>
-          <option value={yesterday.format("LL")}>
-            {yesterday.format("LL")}
-          </option>
         </Select>
         <Input
           type="number"
