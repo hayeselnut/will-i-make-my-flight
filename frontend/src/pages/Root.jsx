@@ -16,7 +16,7 @@ const Root = () => {
     container: 'map',
     style: 'mapbox://styles/calebrealsmurf/cljkaomqn001r01rdawnn0bwu',
     projection: 'globe', // Display the map as a globe, since satellite-v9 defaults to Mercator
-    zoom: 3,
+    zoom: 1,
     center: [-90, 40]
   });
 
@@ -72,7 +72,7 @@ const Root = () => {
     map.flyTo({
       center: coordinate,
       essential: true,
-      zoom: 10
+      zoom: 10,
     });
     userInteracting = true;
   }
