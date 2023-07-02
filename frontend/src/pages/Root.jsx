@@ -85,7 +85,7 @@ const Root = () => {
         <Center>
           <Link to="/">
             <FadeIn transitionDuration={3000}>
-              <Heading position="relative" color="rgba(235,235,235, 1)" size={"4xl"} marginTop="8vh" textAlign="center">
+              <Heading position="relative" color="white" size={"4xl"} marginTop="8vh" textAlign="center">
                 will i make my flight?
               </Heading>
             </FadeIn>
