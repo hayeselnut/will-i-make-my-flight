@@ -13,14 +13,15 @@ import "./Globe.css";
 import FadeIn from "react-fade-in";
 
 const dummyData = {
-  longitude: -118.40853,
-  latitude: 33.9415889,
+  longitude: -118.40853, // LAX
+  latitude: 33.9415889, // LAX
   percent_chance: 50,
   departure_airport: "LAX", // AIRPORT CODE
   departure_time_scheduled: "2023-07-01T08:30:37", // UTC
   arrival_airport: "2023-07-01T09:07:37", // UTC
   predicted_bag_check: 20, // FIXED amount of time for bag check in
   predicted_security: 30, // in minutes
+  predicted_walk_to_gate: 15, // in minutes
   predicted_flight_delay: 60, // in minutes
 };
 
