@@ -30,6 +30,7 @@ def fetch_flight_details(flight_num, arrival_time):
             "flight_iata": flight_num
         })
         body = response.json()
+        print(body)
         if "response" in body:
             details = body["response"]
             airport = details["dep_iata"]
@@ -41,17 +42,18 @@ def fetch_flight_details(flight_num, arrival_time):
         else:
             raise Exception("Invalid request")
     
-        with open("data/airport-locations.csv", "r") as f:
+        with open("data/airport-locations.json", "r") as f:
             locations = json.loads(f)
-            longitude = locations[airport]["longitude"]
             latitude = locations[airport]["latitude"]
+            longitude = locations[airport]["longitude"]
     
-    except:
+    except Exception as e:
+        print(e)
         airport = "LAX"
         dep_time = "2023-07-01T12:07:37"
         gate = "29"
-        longitude = 33.94254
-        latitude = 0118.40807
+        latitude = 33.94254
+        longitude = -118.40807
 
     return {
         "airport": airport,
