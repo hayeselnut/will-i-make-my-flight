@@ -233,7 +233,7 @@ const JourneyTimeline = ({
             },
             index
           ) => (
-            <Step key={index} style={{ transition: "opacity 1s ease-in" }}>
+            <Step key={index}>
               <StepIndicator style={style ?? grey}>
                 {icon && <Icon as={icon} color={iconStyle} />}
               </StepIndicator>
