@@ -14,7 +14,7 @@ import "./Background.css";
 mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const Root = () => {
-  mapboxgl.accessToken = 'pk.eyJ1IjoiY2FsZWJyZWFsc211cmYiLCJhIjoiY2xqazVzN2JyMGZnYjNwcTk4eGZmbHk0aiJ9.gCudJOG6oeYzGsuTlstEkg';
+  mapboxgl.accessToken = process.env.REACT_APP_ACCESS_TOKEN;
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/calebrealsmurf/cljkaomqn001r01rdawnn0bwu',
