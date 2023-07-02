@@ -10,6 +10,16 @@ The backend must be locally run on port `3010`. Further instructions on how to r
 
 ## Data sources
 
+Real time flight information:
+
+- [AirLabs](https://airlabs.co/)
+
 For flight delay predictive model:
 
+- [Bureau of Transportation Statistics](https://www.transtats.bts.gov/Homepage.asp)
+- Data was then used to build linear and polynomial regression models, ultimately using polynomial regression for its improved accuracy
+
 For wait time predictive model:
+
+- [TSA Wait Times](https://www.tsawaittimes.com/)
+- Historical wait times for given airport and month used to calculate average wait times
