@@ -54,11 +54,17 @@ def predict_walk_to_gate(airport, gate):
     }
 
 def predict_flight_delay(airport, airline, flight_departure_time):
-    prediction = predict_delay(airport, airline, flight_departure_time)
+    dep_time_obj = datetime.strptime(flight_departure_time, DEFAULT_TS_FMT)
+    print(airport)
+    print(airline)
+    print(dep_time_obj)
+
+    prediction = predict_delay(airport, airline, dep_time_obj)
+    print(prediction)
     confidence = np.sqrt(prediction[1])
 
     return {
-        "time": timedelta(hours=prediction[0], minutes=0) + flight_departure_time,
+        "time": prediction[0] * 60,
         "confidence": 80,
     }
 

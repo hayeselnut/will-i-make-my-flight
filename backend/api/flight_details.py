@@ -44,7 +44,7 @@ def fetch_flight_details(flight_num, arrival_time):
         with open("data/airport-location.csv", "r") as f:
             locations = json.loads(f)
             longitude = locations[airport]["longitude"]
-            latitiude = locations[airport]["latitude"]
+            latitude = locations[airport]["latitude"]
     
     except:
         airport = "LAX"
