@@ -102,6 +102,7 @@ const Home = () => {
           onChange={(event) => setBagCheck(event.target.checked)}
           value={bagCheck}
           defaultChecked
+          colorScheme="grey"
         >
           I am checking in luggage.
         </Checkbox>
@@ -110,6 +111,8 @@ const Home = () => {
       <Center>
         <Button
           marginTop={10}
+          backgroundColor="#292929"
+          color="rgba(235,235,235, 1)"
           onClick={searchFlight}
           type="submit"
           style={{background: "var(--chakra-colors-black)", color: "white"}}

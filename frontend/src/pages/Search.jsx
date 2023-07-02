@@ -12,6 +12,7 @@ import "./Background.css";
 import "./Globe.css";
 import FadeIn from "react-fade-in";
 
+
 const dummyData = {
   departure_long: -118.40853, // LAX
   departure_lat: 33.9415889, // LAX
@@ -93,11 +94,12 @@ const Search = () => {
   return loaded ? (
     <VStack>
       <FadeIn transitionDuration={4000}>
-        <Text align="center" fontSize="3xl">You have a </Text>
+        <Text align="center" fontSize="3xl">you have a </Text>
       </FadeIn>
       <FadeIn transitionDuration={4000}>
         <Text
           color={colorStyle(likelihood.percent_chance)}
+          // fontFamily='DM Serif Display' serif 
           fontWeight={"bold"}
           fontSize="9xl"
         >

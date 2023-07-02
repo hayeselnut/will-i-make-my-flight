@@ -19,7 +19,7 @@ const Root = () => {
     container: 'map',
     style: 'mapbox://styles/calebrealsmurf/cljkaomqn001r01rdawnn0bwu',
     projection: 'globe', // Display the map as a globe, since satellite-v9 defaults to Mercator
-    zoom: 0.7,
+    zoom: 1,
     center: [-90, 40]
   });
 
@@ -85,15 +85,19 @@ const Root = () => {
         <Center>
           <Link to="/">
             <FadeIn transitionDuration={3000}>
-              <Heading position="relative" color="white" size={"4xl"} marginTop="8vh" textAlign="center">
-                Will I Make My Flight?
+              <Heading position="relative" color="rgba(235,235,235, 1)" size={"4xl"} marginTop="8vh" textAlign="center">
+                will i make my flight?
               </Heading>
             </FadeIn>
           </Link>
         </Center>
         <Card padding={10} marginTop={"10vh"} minHeight={"430px"}
         style={{
-          "background-color": "rgba(255, 255, 255, 0.9)",
+          "background-color": "rgba(235,235,235, 0.8)",
+          "border-radius": 10,
+          "border-style": "solid",
+          'border-width': 'thin',
+          "border-color": "rgba(179, 179, 179, 0.6)", 
           "backdrop-filter": "blur(5px)",
         }}>
           <Outlet context={flyTo}/>
