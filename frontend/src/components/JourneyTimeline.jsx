@@ -185,6 +185,7 @@ const JourneyTimeline = ({
       label: "Scheduled take off",
       icon: FaPlaneDeparture,
       iconStyle: bodyText,
+      hideBadge: true,
       predictedTime: addMinutes(departure_time_scheduled, 0).diff(
         addMinutes(
           arrival_airport,
@@ -198,6 +199,7 @@ const JourneyTimeline = ({
       time: addMinutes(departure_time_scheduled, predicted_flight_delay),
       label: "Predicted take off",
       style: dashedGrey,
+      hideBadge: true,
       predictedTime: Math.min(
         predicted_flight_delay,
         addMinutes(departure_time_scheduled, predicted_flight_delay).diff(
@@ -218,7 +220,7 @@ const JourneyTimeline = ({
 
   return (
     <FadeIn transitionDuration={3000}>
-      <Stepper size="lg" orientation="vertical" height="600px" gap="0">
+      <Stepper size="lg" orientation="vertical" height="600px" gap="0" marginLeft="70px">
         {eventsToDisplay.map(
           (
             {
@@ -230,6 +232,7 @@ const JourneyTimeline = ({
               badgeColor,
               icon,
               iconStyle,
+              hideBadge,
             },
             index
           ) => (
@@ -264,7 +267,7 @@ const JourneyTimeline = ({
                   {time.format("LT")}
                 </StepDescription>
                 <StepDescription>
-                  {predictedTime && (
+                  {predictedTime && !hideBadge && (
                     <Badge colorScheme={predictedTime < 0 ? "red" : badgeColor}>
                       {predictedTime < 0 ? `Late by ${predictedTime * -1} mins` : `${predictedTime} mins`}
                     </Badge>

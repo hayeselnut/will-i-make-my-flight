@@ -2,6 +2,7 @@ from flask import Flask, request
 from flight_details import airline_from_flight_num, fetch_flight_details
 from predict import predict_bag_check, predict_security, predict_flight_delay, predict_walk_to_gate, calculate_confidence, will_make_it
 from flask_cors import CORS
+import math
 
 app = Flask(__name__)
 CORS(app)
@@ -65,7 +66,7 @@ def get_flight_likelihood():
         "predicted_bag_check": bag_check["time"], # in minutes
         "predicted_security": security["time"], # in minutes
         "predicted_walk_to_gate": walk_to_gate["time"],
-        "predicted_flight_delay": flight_delay["time"], # in minutes
+        "predicted_flight_delay": int(math.ceil(flight_delay["time"])), # in minutes
         "percent_chance": percent_chance
     }
 

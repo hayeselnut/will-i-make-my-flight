@@ -16,6 +16,7 @@ import "./Background.css";
 
 const Home = () => {
   const today = moment();
+  const yesterday = moment().add(-1, "day");
   const tomorrow = moment().add(1, "day");
 
   const [flightNumber, setFlightNumber] = useState("");
@@ -73,9 +74,13 @@ const Home = () => {
           onChange={(event) => setDay(event.target.value)}
           placeholder="Select day"
         >
+          <option value={yesterday.format("LL")}>{yesterday.format("LL")}</option>
           <option value={today.format("LL")}>{today.format("LL")}</option>
           <option value={tomorrow.format("LL")}>
             {tomorrow.format("LL")}
+          </option>
+          <option value={yesterday.format("LL")}>
+            {yesterday.format("LL")}
           </option>
         </Select>
         <Input
@@ -110,6 +115,7 @@ const Home = () => {
           color="rgba(235,235,235, 1)"
           onClick={searchFlight}
           type="submit"
+          style={{background: "var(--chakra-colors-black)", color: "white"}}
         >
           Search
         </Button>
