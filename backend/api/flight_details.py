@@ -41,7 +41,7 @@ def fetch_flight_details(flight_num, arrival_time):
         else:
             raise Exception("Invalid request")
     
-        with open("data/airport-location.csv", "r") as f:
+        with open("data/airport-locations.csv", "r") as f:
             locations = json.loads(f)
             longitude = locations[airport]["longitude"]
             latitude = locations[airport]["latitude"]
