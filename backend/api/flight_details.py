@@ -3,6 +3,7 @@ import re
 import os
 from dotenv import load_dotenv
 import requests
+import json
 
 from helpers import AIRLABS_TS_FMT, DEFAULT_TS_FMT
 
@@ -43,7 +44,7 @@ def fetch_flight_details(flight_num, arrival_time):
             raise Exception("Invalid request")
     
         with open("data/airport-locations.json", "r") as f:
-            locations = json.loads(f)
+            locations = json.load(f)
             latitude = locations[airport]["latitude"]
             longitude = locations[airport]["longitude"]
     
