@@ -266,7 +266,7 @@ const JourneyTimeline = ({
                 <StepDescription>
                   {predictedTime && (
                     <Badge colorScheme={predictedTime < 0 ? "red" : badgeColor}>
-                      {predictedTime} mins
+                      {predictedTime < 0 ? `Late by ${predictedTime * -1} mins` : `${predictedTime} mins`}
                     </Badge>
                   )}
                 </StepDescription>
