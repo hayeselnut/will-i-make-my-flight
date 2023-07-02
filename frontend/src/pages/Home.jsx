@@ -110,9 +110,9 @@ const Home = () => {
       <Center>
         <Button
           marginTop={10}
-          colorScheme="blue"
           onClick={searchFlight}
           type="submit"
+          style={{background: "var(--chakra-colors-black)", color: "white"}}
         >
           Search
         </Button>

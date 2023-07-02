@@ -19,7 +19,7 @@ const Root = () => {
     container: 'map',
     style: 'mapbox://styles/calebrealsmurf/cljkaomqn001r01rdawnn0bwu',
     projection: 'globe', // Display the map as a globe, since satellite-v9 defaults to Mercator
-    zoom: 3,
+    zoom: 0.7,
     center: [-90, 40]
   });
 

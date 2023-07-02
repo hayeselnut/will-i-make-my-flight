@@ -1,10 +1,25 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, Root, Search } from "./pages";
 
+const theme = extendTheme({
+  components: {
+    Checkbox: {
+      baseStyle: {
+        control: {
+          _checked: {
+            bg: "black",
+            borderColor: "black",
+          }
+        }
+      }
+    }
+  }
+})
+
 const App = () => {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Root />}>
