@@ -13,6 +13,8 @@ import "./Globe.css";
 import FadeIn from "react-fade-in";
 
 const dummyData = {
+  longitude: -118.40853,
+  latitude: 33.9415889,
   percent_chance: 50,
   departure_airport: "LAX", // AIRPORT CODE
   departure_time_scheduled: "2023-07-01T08:30:37", // UTC
@@ -64,19 +66,22 @@ const Search = () => {
         if (json.error) {
           console.error(json.error);
           setLikelihood(dummyData);
+          flyTo([dummyData.longitude, dummyData.latitude]);
           console.log("error branch");
         } else {
           setLikelihood(json);
           console.log("correct branch");
+        flyTo([json.longitude, json.latitude]);
         }
       } catch (e) {
         console.error(e);
         setLikelihood(dummyData);
+        flyTo([dummyData.longitude, dummyData.latitude]);
       }
 
       setLoaded(true);
-      console.log("FLYING OVER!");
-      flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
+      // console.log("FLYING OVER!");
+      // flyTo([(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100]);
     }, 1000);
 
     return () => {
