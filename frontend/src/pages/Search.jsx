@@ -15,7 +15,7 @@ import FadeIn from "react-fade-in";
 const dummyData = {
   departure_long: -118.40853, // LAX
   departure_lat: 33.9415889, // LAX
-  percent_chance: 50,
+  percent_chance: 49,
   departure_airport: "LAX", // AIRPORT CODE
   departure_time_scheduled: "2023-07-01T10:30:37", // UTC
   arrival_airport: "2023-07-01T09:07:37", // UTC
