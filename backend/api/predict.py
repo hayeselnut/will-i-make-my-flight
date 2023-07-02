@@ -2,7 +2,7 @@ from helpers import DEFAULT_TS_FMT, month_from_timestamp
 import json
 from datetime import datetime, timedelta
 from models.flight_delays_agg import predict_delay
-from numpy import np
+import numpy as np
 
 def predict_bag_check(airport, airline, arrival_time):
     month = month_from_timestamp(arrival_time, DEFAULT_TS_FMT)
@@ -54,11 +54,17 @@ def predict_walk_to_gate(airport, gate):
     }
 
 def predict_flight_delay(airport, airline, flight_departure_time):
-    prediction = predict_delay(airport, airline, flight_departure_time)
+    dep_time_obj = datetime.strptime(flight_departure_time, DEFAULT_TS_FMT)
+    print(airport)
+    print(airline)
+    print(dep_time_obj)
+
+    prediction = predict_delay(airport, airline, dep_time_obj)
+    print(prediction)
     confidence = np.sqrt(prediction[1])
 
     return {
-        "time": timedelta(minutes=prediction[0]) + flight_departure_time,
+        "time": prediction[0],
         "confidence": 80,
     }
 

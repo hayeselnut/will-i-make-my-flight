@@ -32,6 +32,7 @@ def get_flight_likelihood():
     bag_check = True if data["bag_check"].lower() == "true" else False
 
     extra_details = fetch_flight_details(flight_num, arrival_time)
+    print(extra_details)
     departure_airport = extra_details["airport"]
     scheduled_departure_time = extra_details["scheduled_departure_time"]
     gate = extra_details["gate"]

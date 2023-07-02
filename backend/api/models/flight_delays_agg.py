@@ -4,10 +4,12 @@ from datetime import datetime, timedelta
 from sklearn import metrics, linear_model
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from os.path import relpath
+import os
 
 def predict_delay(airport, airline, flight_departure_time):
     # Load in Aggregated DF
-    agg = pd.read_csv('../../data/delay_agg.csv')
+    agg = pd.read_csv(relpath('./models/delay_agg.csv'))
     agg = agg.loc[agg['OP_UNIQUE_CARRIER'] == airline].reset_index(drop=True)
 
     # ------------------------- Encode ------------------------
